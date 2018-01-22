@@ -8,4 +8,5 @@ package Model;
  */
 public interface Criterion {
 
+    public boolean isSatisfiedBy(Car c);
 }
