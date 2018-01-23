@@ -135,4 +135,84 @@ public class AddRantingPanel extends JPanel {
         this.add(rightPanelGlob, BorderLayout.EAST);
         this.add(bottomPanel, BorderLayout.SOUTH);
     }
+
+    public JTable getClientsTable() {
+        return clientsTable;
+    }
+
+    public JTable getCarsTable() {
+        return carsTable;
+    }
+
+    public JLabel getCinLabel() {
+        return cinLabel;
+    }
+
+    public JLabel getFnameLabel() {
+        return fnameLabel;
+    }
+
+    public JLabel getLnameLabel() {
+        return lnameLabel;
+    }
+
+    public JLabel getNumLabel() {
+        return numLabel;
+    }
+
+    public JLabel getModelLabel() {
+        return modelLabel;
+    }
+
+    public JLabel getBrandLabel() {
+        return brandLabel;
+    }
+
+    public JLabel getPriceLabel() {
+        return priceLabel;
+    }
+
+    public JTextField getCinField() {
+        return cinField;
+    }
+
+    public JTextField getFnameField() {
+        return fnameField;
+    }
+
+    public JTextField getLnameField() {
+        return lnameField;
+    }
+
+    public JTextField getNumField() {
+        return numField;
+    }
+
+    public JTextField getModelField() {
+        return modelField;
+    }
+
+    public JTextField getBrandField() {
+        return brandField;
+    }
+
+    public JTextField getPriceField() {
+        return priceField;
+    }
+
+    public JButton getClientSearchButton() {
+        return clientSearchButton;
+    }
+
+    public JButton getCarSearchButton() {
+        return carSearchButton;
+    }
+
+    public JButton getClientResetButton() {
+        return clientResetButton;
+    }
+
+    public JButton getCarResetButton() {
+        return carResetButton;
+    }
 }

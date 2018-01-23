@@ -55,4 +55,52 @@ public class CarsPanel extends JPanel {
         this.add(new JScrollPane(table), BorderLayout.CENTER);
         this.add(bottomPanel, BorderLayout.SOUTH);
     }
+
+    public JTable getTable() {
+        return table;
+    }
+
+    public JLabel getNumLabel() {
+        return numLabel;
+    }
+
+    public JLabel getModelLabel() {
+        return modelLabel;
+    }
+
+    public JLabel getBrandLabel() {
+        return brandLabel;
+    }
+
+    public JLabel getPriceLabel() {
+        return priceLabel;
+    }
+
+    public JTextField getNumField() {
+        return numField;
+    }
+
+    public JTextField getModelField() {
+        return modelField;
+    }
+
+    public JTextField getBrandField() {
+        return brandField;
+    }
+
+    public JTextField getPriceField() {
+        return priceField;
+    }
+
+    public JButton getAddButton() {
+        return addButton;
+    }
+
+    public JButton getResetButton() {
+        return resetButton;
+    }
+
+    public JButton getExportButton() {
+        return exportButton;
+    }
 }

@@ -15,6 +15,8 @@ public class CarController implements ActionListener{
 	public CarController(CarsPanel carsPanel){
 		this.carsPanel = carsPanel;
 		carDAO = DAOFactory.getCarDAO();
+		this.carsPanel.getAddButton().addActionListener(this);
+		this.carsPanel.getResetButton().addActionListener(this);
 	}
 
 	public void finalize() throws Throwable {
@@ -23,6 +25,10 @@ public class CarController implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-
+		if (e.getSource() == this.carsPanel.getAddButton()) {
+			// code
+		} else if (e.getSource() == this.carsPanel.getResetButton()) {
+			//code
+		}
 	}
 }

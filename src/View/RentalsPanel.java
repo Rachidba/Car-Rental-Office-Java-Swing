@@ -49,4 +49,44 @@ public class RentalsPanel extends JPanel {
         this.add(new JScrollPane(table), BorderLayout.CENTER);
         this.add(bottomPanel, BorderLayout.SOUTH);
     }
+
+    public JTable getTable() {
+        return table;
+    }
+
+    public JLabel getCinLabel() {
+        return cinLabel;
+    }
+
+    public JLabel getFnameLabel() {
+        return fnameLabel;
+    }
+
+    public JLabel getLnameLabel() {
+        return lnameLabel;
+    }
+
+    public JTextField getCinField() {
+        return cinField;
+    }
+
+    public JTextField getFnameField() {
+        return fnameField;
+    }
+
+    public JTextField getLnameField() {
+        return lnameField;
+    }
+
+    public JButton getAddButton() {
+        return addButton;
+    }
+
+    public JButton getResetButton() {
+        return resetButton;
+    }
+
+    public JButton getExportButton() {
+        return exportButton;
+    }
 }
