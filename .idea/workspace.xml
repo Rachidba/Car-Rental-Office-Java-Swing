@@ -2,32 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65c08de4-883f-4492-ac26-d4bccec582b2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/MainClass.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/BrandCriterion.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/DefaultTableModel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/Ranting.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MainClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Model/DefaultTableModel.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/EntrepriseAchitectUMLDiagrams/UMLDiagrams.EAP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/EntrepriseAchitectUMLDiagrams/UMLDiagrams.ldb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Controller/Agency.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Controller/IBusiness.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/BrindCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/Rentings.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Controller/Agency.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Controller/IBusiness.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/Car.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/Car.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/CarDAO.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/CarDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/Client.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/Client.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/ClientDAO.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/ClientDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/CriteriaInter.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/CriteriaInter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/Criterion.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/DAO.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/DAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/DAOFactory.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/DAOFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/ModeleCriterion.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/ModeleCriterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/PriceCriterion.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/PriceCriterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/RantingDAO.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/RantingDAO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_45_bin2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_45_bin.xml" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_45_bin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -50,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainClass.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainClass.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+              <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
               <folding>
                 <element signature="e#68#69#0" expanded="true" />
                 <element signature="e#116#117#0" expanded="true" />
@@ -66,10 +43,23 @@
       <file leaf-file-name="Car.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="114">
               <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding>
                 <element signature="e#262#263#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientDAO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Model/ClientDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+              <folding>
+                <element signature="e#206#207#0" expanded="true" />
+                <element signature="e#230#231#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,32 +134,42 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="CarRentalOfficeApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarRentalOfficeApp" type="462c0819:PsiDirectoryNode" />
+              <item name="Car-Rental-Office-Java-Swing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Car-Rental-Office-Java-Swing" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CarRentalOfficeApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarRentalOfficeApp" type="462c0819:PsiDirectoryNode" />
+              <item name="Car-Rental-Office-Java-Swing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Car-Rental-Office-Java-Swing" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Car-Rental-Office-Java-Swing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Car-Rental-Office-Java-Swing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Car-Rental-Office-Java-Swing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/mysql-connector-java-5.1.45-bin.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../dbtest/mysql-connector-java-5.1.45-bin.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
@@ -300,11 +300,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -326,6 +326,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -366,6 +367,35 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Model/DefaultTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="64" lean-forward="false" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="e#262#263#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <folding>
+            <element signature="e#68#69#0" expanded="true" />
+            <element signature="e#116#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/DefaultTableModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -607,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/ClientDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Criterion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -625,16 +648,6 @@
     <entry file="file://$PROJECT_DIR$/src/Controller/RentingController.java" />
     <entry file="file://$PROJECT_DIR$/src/View/AddClientPanel.java" />
     <entry file="file://$PROJECT_DIR$/src/View/ClientsListPanel.java" />
-    <entry file="file://$PROJECT_DIR$/src/Model/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding>
-            <element signature="e#262#263#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/RentalsPanel.java" />
     <entry file="file://$PROJECT_DIR$/src/View/ClientsPanel.java" />
     <entry file="file://$PROJECT_DIR$/src/View/CarsPanel.java" />
@@ -651,10 +664,31 @@
     <entry file="file://$PROJECT_DIR$/src/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
           <folding>
             <element signature="e#68#69#0" expanded="true" />
             <element signature="e#116#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="e#262#263#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/ClientDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding>
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -699,7 +733,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -716,6 +750,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
