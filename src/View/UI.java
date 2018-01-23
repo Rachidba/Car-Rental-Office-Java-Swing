@@ -1,19 +1,11 @@
 package View;
 
-import Model.DefaultTableModel;
-import com.sun.org.apache.regexp.internal.RE;
-
 import javax.swing.*;
 
 public class UI extends JFrame{
     private JTabbedPane tabbedPane;
 
-    public UI(DefaultTableModel[] models) {
-        ClientsPanel clients = new ClientsPanel(models[0]);
-        CarsPanel cars = new CarsPanel(models[1]);
-        RentalsPanel rentals = new RentalsPanel(models[2]);
-        AddRantingPanel AddRanting = new AddRantingPanel(models[0], models[1]);
-
+    public UI(ClientsPanel clients, CarsPanel cars, RentalsPanel rentals, AddRantingPanel AddRanting) {
         tabbedPane = new JTabbedPane(JTabbedPane.LEFT);
         tabbedPane.add("Clients", clients);
         tabbedPane.add("Cars", cars);

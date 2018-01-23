@@ -1,8 +1,7 @@
 package View;
 
-import Model.DefaultTableModel;
-import javafx.scene.input.ScrollEvent;
-import sun.awt.HorizBagLayout;
+import Model.CarTableModel;
+import Model.ClientTableModel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -29,11 +28,11 @@ public class AddRantingPanel extends JPanel {
     private JButton clientResetButton;
     private JButton carResetButton;
 
-    public AddRantingPanel(DefaultTableModel clientModel, DefaultTableModel carModel) {
+    public AddRantingPanel() {
         this.setLayout(new BorderLayout());
 
-        this.clientsTable = new JTable(clientModel);
-        this.carsTable = new JTable(carModel);
+        this.clientsTable = new JTable(new ClientTableModel());
+        this.carsTable = new JTable(new CarTableModel());
         this.cinLabel = new JLabel("      CIN: ", SwingConstants.RIGHT);
         this.fnameLabel = new JLabel("First name: ", SwingConstants.RIGHT);
         this.lnameLabel = new JLabel("   Last name: ", SwingConstants.RIGHT);

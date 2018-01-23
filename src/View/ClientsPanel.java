@@ -1,6 +1,7 @@
 package View;
 
-import Model.DefaultTableModel;
+import Model.Client;
+import Model.ClientTableModel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,10 +18,10 @@ public class ClientsPanel extends JPanel {
     private JButton resetButton;
     private JButton exportButton;
 
-    public ClientsPanel(DefaultTableModel model) {
+    public ClientsPanel() {
         this.setLayout(new BorderLayout());
 
-        this.table = new JTable(model);
+        this.table = new JTable(new ClientTableModel());
         this.cinLabel = new JLabel("CIN: ");
         this.fnameLabel = new JLabel("First name: ");
         this.lnameLabel = new JLabel("Last name: ");
@@ -48,5 +49,6 @@ public class ClientsPanel extends JPanel {
         this.add(topPanel, BorderLayout.NORTH);
         this.add(new JScrollPane(table), BorderLayout.CENTER);
         this.add(bottomPanel, BorderLayout.SOUTH);
+
     }
 }

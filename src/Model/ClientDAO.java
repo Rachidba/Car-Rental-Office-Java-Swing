@@ -1,10 +1,13 @@
 package Model;
 
 
+import java.beans.VetoableChangeListener;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
+import java.util.Vector;
 
 /**
  * @author R2S
@@ -93,6 +96,30 @@ public class ClientDAO extends DAO<Client> {
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	@Override
+	public List<Client> all() {
+		Vector<Client> clients = new Vector<>();
+		try {
+			String query = "SELECT * FROM client";
+			PreparedStatement state = this.connection.prepareStatement(query,
+					ResultSet.TYPE_FORWARD_ONLY,
+					ResultSet.CONCUR_READ_ONLY);
+			ResultSet result = state.executeQuery();
+
+			while(result.next()){
+				clients.add(new Client(
+						result.getString("CIN"),
+						result.getString("firstName"),
+						result.getString("lastName"))
+				);
+			}
+			return clients;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return clients;
 	}
 
 	public void finalize() throws Throwable {

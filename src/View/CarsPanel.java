@@ -1,6 +1,6 @@
 package View;
 
-import Model.DefaultTableModel;
+import Model.CarTableModel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,10 +19,10 @@ public class CarsPanel extends JPanel {
     private JButton resetButton;
     private JButton exportButton;
 
-    public CarsPanel(DefaultTableModel model) {
+    public CarsPanel() {
         this.setLayout(new BorderLayout());
 
-        this.table = new JTable(model);
+        this.table = new JTable(new CarTableModel());
         this.numLabel = new JLabel("R.NUMBER: ");
         this.modelLabel = new JLabel("Model: ");
         this.brandLabel = new JLabel("Brand: ");

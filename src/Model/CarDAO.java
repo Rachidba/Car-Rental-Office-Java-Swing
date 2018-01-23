@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
+import java.util.Vector;
 
 /**
  * @author R2S
@@ -93,6 +95,31 @@ public class CarDAO extends DAO<Car> {
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	@Override
+	public List<Car> all() {
+		Vector<Car> cars = new Vector<>();
+		try {
+			String query = "SELECT * FROM car";
+			PreparedStatement state = this.connection.prepareStatement(query,
+					ResultSet.TYPE_FORWARD_ONLY,
+					ResultSet.CONCUR_READ_ONLY);
+			ResultSet result = state.executeQuery();
+
+			while(result.next()){
+				Car newC = new Car(
+						result.getString("registrationNumber"),
+						result.getString("model"),
+						result.getString("brand"),
+						result.getDouble("price"));
+				cars.add(newC);
+			}
+			return cars;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return cars;
 	}
 
 

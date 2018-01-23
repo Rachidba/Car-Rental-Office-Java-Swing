@@ -1,6 +1,6 @@
 package View;
 
-import Model.DefaultTableModel;
+import Model.RantalsTableModel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,10 +17,10 @@ public class RentalsPanel extends JPanel {
     private JButton resetButton;
     private JButton exportButton;
 
-    public RentalsPanel(DefaultTableModel model) {
+    public RentalsPanel() {
         this.setLayout(new BorderLayout());
 
-        this.table = new JTable(model);
+        this.table = new JTable(new RantalsTableModel());
         this.cinLabel = new JLabel("CIN: ");
         this.fnameLabel = new JLabel("First name: ");
         this.lnameLabel = new JLabel("Last name: ");

@@ -5,6 +5,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 /**
  * @author R2S
@@ -102,6 +103,15 @@ public class RantingDAO extends DAO<Ranting> {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		return null;
+	}
+
+	@Override
+	public List<Ranting> all() {
+		return null;
+	}
+
+	public List<Ranting> all(String ref) {
 		return null;
 	}
 
