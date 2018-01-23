@@ -12,11 +12,11 @@ import java.sql.SQLException;
  */
 public class SingletonConnection {
 	//Database connection URL
-	private final String url = "jdbc:mysql://localhost:3306/carrentaloffice";
+	private final String url = "jdbc:mysql://localhost:3306/carrentaloffice?useSSL=false";
 	//Username
 	private final String user = "root";
 	//Passowrd, in my case i don t have a password
-	private final String pass = "";
+	private final String pass = "Password";
 	//Connection object
 	private static Connection connection;
 
