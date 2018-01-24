@@ -2,28 +2,27 @@ package Model;
 
 import javax.swing.table.AbstractTableModel;
 import java.util.List;
+import java.util.Vector;
 
 public class CarTableModel extends AbstractTableModel{
     private String[] titles = {"R.NUMBER", "Model", "Brand", "Price"};
     private Object[][] data;
+    List<Car> cars;
 
     public CarTableModel() {
-        data = new Object[][]{};
+        cars = DAOFactory.getCarDAO().all();
+        this.loadData();
     }
 
-    public CarTableModel(List<Car> cars) {
-        this.loadData(cars);
-    }
-
-    public void loadData(List<Car> cars) {
-        int i = 0;
-        this.data = new Object[][]{};
+    public void loadData() {
+        int i=0;
+        this.data = new Object[cars.size()][5];
         for(Car c:cars) {
             data[i][0] = c.getRegistrationNumber();
-            data[i][1] = c.getRegistrationNumber();
-            data[i][2] = c.getModel();
-            data[i][3] = c.getBrand();
-            data[i][4] =String.valueOf(c.getPrice());
+            data[i][1] = c.getModel();
+            data[i][2] = c.getBrand();
+            data[i][3] = String.valueOf(c.getPrice());
+            data[i][4] = new Boolean(false);
             i++;
         }
         fireTableChanged(null);

@@ -27,10 +27,12 @@ public class CarsPanel extends JPanel {
         this.modelLabel = new JLabel("Model: ");
         this.brandLabel = new JLabel("Brand: ");
         this.priceLabel = new JLabel("Price: ");
+
         this.numField = new JTextField(8);
         this.modelField = new JTextField(12);
         this.brandField = new JTextField(12);
         this.priceField = new JTextField(8);
+
         this.addButton = new JButton("ADD");
         this.resetButton = new JButton("Reset");
         this.exportButton = new JButton("Export");

@@ -19,14 +19,15 @@ public class RentalsPanel extends JPanel {
 
     public RentalsPanel() {
         this.setLayout(new BorderLayout());
-
         this.table = new JTable(new RantalsTableModel());
         this.cinLabel = new JLabel("CIN: ");
         this.fnameLabel = new JLabel("First name: ");
         this.lnameLabel = new JLabel("Last name: ");
+
         this.cinField = new JTextField(8);
         this.fnameField = new JTextField(12);
         this.lnameField = new JTextField(12);
+
         this.addButton = new JButton("ADD");
         this.resetButton = new JButton("Reset");
         this.exportButton = new JButton("Export");

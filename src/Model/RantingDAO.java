@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Vector;
 
 /**
  * @author R2S
@@ -108,7 +109,29 @@ public class RantingDAO extends DAO<Ranting> {
 
 	@Override
 	public List<Ranting> all() {
-		return null;
+		Vector<Ranting> rantings = new Vector<>();
+		try {
+			String query = "SELECT * FROM ranting";
+			PreparedStatement state = this.connection.prepareStatement(query,
+					ResultSet.TYPE_FORWARD_ONLY,
+					ResultSet.CONCUR_READ_ONLY);
+			ResultSet result = state.executeQuery();
+
+			while(result.next()){
+				rantings.add(new Ranting(
+						result.getInt("rantID"),
+						(new CarDAO(this.connection)).find(result.getString("registrationNumber")),
+						(new ClientDAO(this.connection)).find(result.getString("CIN")),
+						result.getBoolean("isReturned"),
+						result.getDate("rentalDate"),
+						result.getDate("returnDate"))
+				);
+			}
+			return rantings;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return rantings;
 	}
 
 	public List<Ranting> all(String ref) {

@@ -5,32 +5,33 @@ import java.util.List;
 import java.util.Vector;
 
 public class RantalsTableModel extends AbstractTableModel {
-    private String[] titles = {"Car's Num", "Client CIN", "Rental Date", "Return Date"};
-    private Vector<String[]> data;
-
+    private String[] titles = {"Car's Num", "Client CIN", "Rental Date", "Return Date", "Delete"};
+    private Object[][] data ;
+    List<Ranting> rentals;
     public RantalsTableModel() {
-        data = new Vector<String[]>();
+
+        rentals = DAOFactory.getRantingDAO().all();
+        this.loadData();
     }
 
-    public RantalsTableModel(List<Ranting> rentals) {
-        this.loadData(rentals);
-    }
 
-    public void loadData(List<Ranting> rentals) {
-        this.data = new Vector<String[]>();
+    public void loadData() {
+        int i=0;
+        this.data = new Object[rentals.size()][5];
         for(Ranting c:rentals) {
-            data.add(new String[]{
-                    c.getCar().getRegistrationNumber(),
-                    c.getClient().getCIN(),
-                    c.getRentalDate().toString(),
-                    c.getReturnDate().toString()
-            });
+            data[i][0] = c.getCar().getRegistrationNumber();
+            data[i][1] = c.getClient().getCIN();
+            data[i][2] = c.getRentalDate().toString();
+            data[i][3] = c.getReturnDate().toString();
+            data[i][4] = new Boolean(false);
+            i++;
         }
+
         fireTableChanged(null);
     }
 
     public int getRowCount() {
-        return this.data.size();
+        return this.data.length;
     }
 
     public int getColumnCount() {
@@ -38,7 +39,7 @@ public class RantalsTableModel extends AbstractTableModel {
     }
 
     public Object getValueAt(int rowIndex, int columnIndex) {
-        return this.data.get(rowIndex)[columnIndex];
+        return this.data[rowIndex][columnIndex];
     }
 
     public String getColumnName(int col) {

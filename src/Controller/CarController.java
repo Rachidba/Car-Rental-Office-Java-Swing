@@ -26,9 +26,13 @@ public class CarController implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == this.carsPanel.getAddButton()) {
-			// code
+			//create a new car from field with dao
+			this.carDAO.create(new Car( this.carsPanel.getNumField().getText(),
+										this.carsPanel.getModelField().getText(),
+										this.carsPanel.getBrandField().getText(),
+										Double.parseDouble(this.carsPanel.getPriceField().getText())));
 		} else if (e.getSource() == this.carsPanel.getResetButton()) {
-			//code
+			// :/ ma3refth chnu ndir f reset
 		}
 	}
 }

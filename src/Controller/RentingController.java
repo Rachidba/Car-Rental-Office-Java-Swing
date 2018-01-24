@@ -1,6 +1,12 @@
 package Controller;
 
 
+import Model.CarDAO;
+import Model.DAO;
+import Model.DAOFactory;
+import Model.Ranting;
+import View.RentalsPanel;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 

@@ -6,30 +6,28 @@ import java.util.Vector;
 
 public class ClientTableModel extends AbstractTableModel {
     private String[] titles = {"CIN", "First Name", "LAST NAME"};
-    private Vector<String[]> data;
+    private Object[][] data ;
+    List<Client> clients;
 
     public ClientTableModel() {
-        data = new Vector<String[]>();
+        clients = DAOFactory.getClientDAO().all();
+        this.loadData();
     }
 
-    public ClientTableModel(List<Client> clients) {
-        this.loadData(clients);
-    }
-
-    public void loadData(List<Client> clients) {
-        this.data = new Vector<String[]>();
+    public void loadData() {
+        int i=0;
+        this.data = new Object[clients.size()][5];
         for(Client c:clients) {
-            data.add(new String[]{
-                    c.getCIN(),
-                    c.getFirstName(),
-                    c.getLastName()
-            });
+            data[i][0] = c.getCIN();
+            data[i][1] = c.getFirstName();
+            data[i][2] = c.getLastName();
+            data[i][4] = new Boolean(false);
+            i++;
         }
-        fireTableChanged(null);
     }
 
     public int getRowCount() {
-        return this.data.size();
+        return this.data.length;
     }
 
     public int getColumnCount() {
@@ -37,7 +35,7 @@ public class ClientTableModel extends AbstractTableModel {
     }
 
     public Object getValueAt(int rowIndex, int columnIndex) {
-        return this.data.get(rowIndex)[columnIndex];
+        return this.data[rowIndex][columnIndex];
     }
 
     public String getColumnName(int col) {
