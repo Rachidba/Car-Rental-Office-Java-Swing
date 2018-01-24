@@ -43,4 +43,12 @@ public class CarTableModel extends AbstractTableModel{
     public String getColumnName(int col) {
         return this.titles[col];
     }
+
+    public String[] getTitles() {
+        return titles;
+    }
+
+    public Object[][] getData() {
+        return data;
+    }
 }

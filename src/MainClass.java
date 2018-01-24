@@ -1,15 +1,7 @@
 import Controller.CarController;
 import Controller.ClientController;
-import Model.*;
-
-import java.sql.*;
-
 
 import View.*;
-
-import javax.swing.*;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class MainClass {
     public static void main(String[] args) {

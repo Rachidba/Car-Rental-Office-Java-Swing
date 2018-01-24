@@ -17,6 +17,7 @@ public class CarController implements ActionListener{
 		carDAO = DAOFactory.getCarDAO();
 		this.carsPanel.getAddButton().addActionListener(this);
 		this.carsPanel.getResetButton().addActionListener(this);
+		this.carsPanel.getExportButton().addActionListener(this);
 	}
 
 	public void finalize() throws Throwable {
@@ -31,8 +32,8 @@ public class CarController implements ActionListener{
 										this.carsPanel.getModelField().getText(),
 										this.carsPanel.getBrandField().getText(),
 										Double.parseDouble(this.carsPanel.getPriceField().getText())));
-		} else if (e.getSource() == this.carsPanel.getResetButton()) {
-			// :/ ma3refth chnu ndir f reset
+		} else if (e.getSource() == this.carsPanel.getExportButton()){
+			ExcelExporter.export(this.carsPanel.getModel().getTitles(), this.carsPanel.getModel().getData(), "Cars.xls");
 		}
 	}
 }

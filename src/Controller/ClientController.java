@@ -5,6 +5,7 @@ import Model.ClientTableModel;
 import Model.DAO;
 import Model.DAOFactory;
 import View.ClientsPanel;
+import org.apache.poi.ss.extractor.ExcelExtractor;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -19,6 +20,7 @@ public class ClientController implements ActionListener {
 		this.clientsPanel = clientsPanel;
 		this.clientsPanel.getAddButton().addActionListener(this);
 		this.clientsPanel.getResetButton().addActionListener(this);
+		this.clientsPanel.getExportButton().addActionListener(this);
 	}
 
 	public void finalize() throws Throwable {
@@ -33,8 +35,8 @@ public class ClientController implements ActionListener {
 					this.clientsPanel.getFnameField().getText(),
 					this.clientsPanel.getLnameField().getText()));
 		}
-		else{
-			// 3awtani ma3reftch :/
+		else if (e.getSource() == this.clientsPanel.getExportButton()){
+			ExcelExporter.export(this.clientsPanel.getModel().getTitles(), this.clientsPanel.getModel().getData(), "Clients.xls");
 		}
 	}
 }

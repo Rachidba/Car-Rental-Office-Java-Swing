@@ -14,9 +14,22 @@ public class ClientTableModel extends AbstractTableModel {
         this.loadData();
     }
 
+    public String[] getTitles() {
+        return titles;
+    }
+
+    public Object[][] getData() {
+        return data;
+    }
+
+    public List<Client> getClients() {
+        return clients;
+    }
+
     public void loadData() {
         int i=0;
         this.data = new Object[clients.size()][5];
+
         for(Client c:clients) {
             data[i][0] = c.getCIN();
             data[i][1] = c.getFirstName();

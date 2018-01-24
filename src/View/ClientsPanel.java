@@ -7,6 +7,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class ClientsPanel extends JPanel {
+    private ClientTableModel model;
     private JTable table;
     private JLabel cinLabel;
     private JLabel fnameLabel;
@@ -20,8 +21,8 @@ public class ClientsPanel extends JPanel {
 
     public ClientsPanel() {
         this.setLayout(new BorderLayout());
-
-        this.table = new JTable(new ClientTableModel());
+        this.model = new ClientTableModel();
+        this.table = new JTable(model);
         this.cinLabel = new JLabel("CIN: ");
         this.fnameLabel = new JLabel("First name: ");
         this.lnameLabel = new JLabel("Last name: ");
@@ -91,4 +92,9 @@ public class ClientsPanel extends JPanel {
     public JButton getExportButton() {
         return exportButton;
     }
+
+    public ClientTableModel getModel() {
+        return model;
+    }
+
 }

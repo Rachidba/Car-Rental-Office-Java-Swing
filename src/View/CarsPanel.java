@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class CarsPanel extends JPanel {
+    private CarTableModel model;
     private JTable table;
     private JLabel numLabel;
     private JLabel modelLabel;
@@ -21,8 +22,8 @@ public class CarsPanel extends JPanel {
 
     public CarsPanel() {
         this.setLayout(new BorderLayout());
-
-        this.table = new JTable(new CarTableModel());
+        this.model = new CarTableModel();
+        this.table = new JTable(model);
         this.numLabel = new JLabel("R.NUMBER: ");
         this.modelLabel = new JLabel("Model: ");
         this.brandLabel = new JLabel("Brand: ");
@@ -104,5 +105,9 @@ public class CarsPanel extends JPanel {
 
     public JButton getExportButton() {
         return exportButton;
+    }
+
+    public CarTableModel getModel() {
+        return model;
     }
 }
