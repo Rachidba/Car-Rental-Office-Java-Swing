@@ -56,6 +56,11 @@ public class AddRantingPanel extends JPanel {
         this.clientResetButton = new JButton("Reset");
         this.carResetButton = new JButton("Reset");
 
+        /*/ new panels /*/
+
+        JPanel panel = new JPanel(new GridLayout(100, 100));
+
+        /*//*/
         JPanel topPanel = new JPanel(new FlowLayout());
         JPanel centerPanel = new JPanel(new BorderLayout());
         JPanel leftPanelGlob = new JPanel(new BorderLayout());
