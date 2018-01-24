@@ -2,6 +2,7 @@ import Controller.CarController;
 import Controller.ClientController;
 import Model.*;
 
+import java.awt.*;
 import java.sql.*;
 
 
@@ -24,5 +25,10 @@ public class MainClass {
         CarController carController = new CarController(carsPanel);
 
         ui.setVisible(true);
+        Dimension actualSize = ui.getContentPane().getSize();
+
+        int extraW = actualSize.width;
+        int extraH = actualSize.height;
+        System.out.println(extraH+"+"+ extraW);
     }
 }

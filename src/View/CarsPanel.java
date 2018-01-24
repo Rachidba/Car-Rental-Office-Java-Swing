@@ -25,10 +25,25 @@ public class CarsPanel extends JPanel {
         this.setLayout(new BorderLayout());
 
         this.table = new JTable(new CarTableModel());
+        //font and color
+        Font f = new Font("Tahoma", Font.PLAIN, 15);
+        Color c = new Color (193, 73, 13);
         this.numLabel = new JLabel("R.NUMBER: ");
+        this.numLabel.setFont(f);
+        this.numLabel.setForeground(c);
+
         this.modelLabel = new JLabel("Model: ");
+        this.modelLabel.setFont(f);
+        this.modelLabel.setForeground(c);
+
         this.brandLabel = new JLabel("Brand: ");
+        this.brandLabel.setFont(f);
+        this.brandLabel.setForeground(c);
+
         this.priceLabel = new JLabel("Price: ");
+        this.priceLabel.setFont(f);
+        this.priceLabel.setForeground(c);
+
 
         this.numField = new JTextField(8);
         this.modelField = new JTextField(12);
@@ -59,6 +74,13 @@ public class CarsPanel extends JPanel {
         bottomPanel.add(exportButton);
         bottomPanel.add(deleteButton);
         bottomPanel.add(updateButton);
+
+
+        //add borders to panels
+        this.setBorder( BorderFactory.createTitledBorder(BorderFactory.createLineBorder(new Color(66, 134, 244)),"Browse cars list"));
+        ((javax.swing.border.TitledBorder) this.getBorder()).setTitleFont(new Font("Tahoma", Font.PLAIN, 20));
+        ((javax.swing.border.TitledBorder) this.getBorder()).setTitleColor(new Color(66, 134, 244));
+
 
         this.add(topPanel, BorderLayout.NORTH);
         this.add(new JScrollPane(table), BorderLayout.CENTER);

@@ -23,9 +23,22 @@ public class ClientsPanel extends JPanel {
         this.setLayout(new BorderLayout());
 
         this.table = new JTable(new ClientTableModel());
+        //font and color
+        Font f = new Font("Tahoma", Font.PLAIN, 15);
+        Color c = new Color (193, 73, 13);
+
         this.cinLabel = new JLabel("CIN: ");
+        this.cinLabel.setFont(f);
+        this.cinLabel.setForeground(c);
+
         this.fnameLabel = new JLabel("First name: ");
+        this.fnameLabel.setFont(f);
+        this.fnameLabel.setForeground(c);
+
         this.lnameLabel = new JLabel("Last name: ");
+        this.lnameLabel.setFont(f);
+        this.lnameLabel.setForeground(c);
+
         this.cinField = new JTextField(8);
         this.fnameField = new JTextField(12);
         this.lnameField = new JTextField(12);
@@ -51,6 +64,13 @@ public class ClientsPanel extends JPanel {
         bottomPanel.add(exportButton);
         bottomPanel.add(deleteButton);
         bottomPanel.add(updateButton);
+
+        //add borders to panels
+        this.setBorder( BorderFactory.createTitledBorder(BorderFactory.createLineBorder(new Color(66, 134, 244)),"Browse clients list"));
+        ((javax.swing.border.TitledBorder) this.getBorder()).setTitleFont(new Font("Tahoma", Font.PLAIN, 20));
+        ((javax.swing.border.TitledBorder) this.getBorder()).setTitleColor(new Color(66, 134, 244));
+
+
 
         this.add(topPanel, BorderLayout.NORTH);
         this.add(new JScrollPane(table), BorderLayout.CENTER);

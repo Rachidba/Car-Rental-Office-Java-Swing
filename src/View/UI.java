@@ -29,11 +29,12 @@ public class UI extends JFrame{
 
 
         this.getContentPane().add(tabbedPane);
-
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setTitle("Car rental office");
-        this.setSize(1020, 500);
+        this.setTitle("Car Rental Office");
+        this.setSize(1100, 600);
         ImageIcon img = new ImageIcon("png/racing.PNG");
         this.setIconImage(img.getImage());
+        this.setResizable(false);
+
     }
 }
