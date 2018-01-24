@@ -2,6 +2,7 @@ package Model;
 
 
 import java.sql.Connection;
+import java.util.List;
 
 /**
  * @author R2S
@@ -26,6 +27,8 @@ public abstract class DAO<T> {
 
 	//Search methode
 	public abstract T find(String ref);
+
+	public abstract List<T> all();
 
 	public void finalize() throws Throwable {
 

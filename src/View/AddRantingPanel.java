@@ -1,10 +1,10 @@
 package View;
 
-import Model.DefaultTableModel;
-import javafx.scene.input.ScrollEvent;
-import sun.awt.HorizBagLayout;
+import Model.CarTableModel;
+import Model.ClientTableModel;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableCellRenderer;
 import java.awt.*;
 
 public class AddRantingPanel extends JPanel {
@@ -29,11 +29,13 @@ public class AddRantingPanel extends JPanel {
     private JButton clientResetButton;
     private JButton carResetButton;
 
-    public AddRantingPanel(DefaultTableModel clientModel, DefaultTableModel carModel) {
-        this.setLayout(new BorderLayout());
+    public AddRantingPanel() {
 
-        this.clientsTable = new JTable(clientModel);
-        this.carsTable = new JTable(carModel);
+        this.setLayout(new BorderLayout());
+        this.clientsTable = new JTable(new ClientTableModel());
+        this.carsTable = new JTable(new CarTableModel());
+
+
         this.cinLabel = new JLabel("      CIN: ", SwingConstants.RIGHT);
         this.fnameLabel = new JLabel("First name: ", SwingConstants.RIGHT);
         this.lnameLabel = new JLabel("   Last name: ", SwingConstants.RIGHT);
@@ -135,5 +137,88 @@ public class AddRantingPanel extends JPanel {
         this.add(leftPanelGlob, BorderLayout.WEST);
         this.add(rightPanelGlob, BorderLayout.EAST);
         this.add(bottomPanel, BorderLayout.SOUTH);
+    }
+    public void paintComponent(Graphics g){
+
+    }
+
+    public JTable getClientsTable() {
+        return clientsTable;
+    }
+
+    public JTable getCarsTable() {
+        return carsTable;
+    }
+
+    public JLabel getCinLabel() {
+        return cinLabel;
+    }
+
+    public JLabel getFnameLabel() {
+        return fnameLabel;
+    }
+
+    public JLabel getLnameLabel() {
+        return lnameLabel;
+    }
+
+    public JLabel getNumLabel() {
+        return numLabel;
+    }
+
+    public JLabel getModelLabel() {
+        return modelLabel;
+    }
+
+    public JLabel getBrandLabel() {
+        return brandLabel;
+    }
+
+    public JLabel getPriceLabel() {
+        return priceLabel;
+    }
+
+    public JTextField getCinField() {
+        return cinField;
+    }
+
+    public JTextField getFnameField() {
+        return fnameField;
+    }
+
+    public JTextField getLnameField() {
+        return lnameField;
+    }
+
+    public JTextField getNumField() {
+        return numField;
+    }
+
+    public JTextField getModelField() {
+        return modelField;
+    }
+
+    public JTextField getBrandField() {
+        return brandField;
+    }
+
+    public JTextField getPriceField() {
+        return priceField;
+    }
+
+    public JButton getClientSearchButton() {
+        return clientSearchButton;
+    }
+
+    public JButton getCarSearchButton() {
+        return carSearchButton;
+    }
+
+    public JButton getClientResetButton() {
+        return clientResetButton;
+    }
+
+    public JButton getCarResetButton() {
+        return carResetButton;
     }
 }
