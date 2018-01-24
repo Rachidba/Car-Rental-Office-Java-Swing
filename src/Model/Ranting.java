@@ -11,10 +11,10 @@ public class Ranting {
 	private Car car;
 	private Client client;
 	private boolean isReturned;
-	private String rentalDate;
-	private String returnDate;
+	private java.sql.Date rentalDate;
+	private java.sql.Date returnDate;
 
-	public Ranting(Car car, Client client, boolean isReturned, String rentalDate, String returnDate){
+	public Ranting(Car car, Client client, boolean isReturned, java.sql.Date rentalDate, java.sql.Date returnDate){
 		this.car = car;
 		this.client = client;
 		this.isReturned = isReturned;
@@ -35,11 +35,11 @@ public class Ranting {
 		return isReturned;
 	}
 
-	public String getRentalDate() {
+	public java.sql.Date getRentalDate() {
 		return rentalDate;
 	}
 
-	public String getReturnDate() {
+	public java.sql.Date getReturnDate() {
 		return returnDate;
 	}
 
