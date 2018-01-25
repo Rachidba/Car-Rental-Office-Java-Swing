@@ -55,24 +55,31 @@ public class AddRantingPanel extends JPanel {
         this.clientsTable = new JTable(new ClientTableModel());
         this.carsTable = new JTable(new CarTableModel());
         //components
+        //font and color
         Font f = new Font("Tahoma", Font.PLAIN, 15);
         Color c = new Color (193, 73, 13);
+
+        Font ff = new Font("Tahoma", Font.PLAIN, 20);
+        Color cc = new Color(66, 134, 244);
+
+        Color cccc = new Color(247, 211, 192);
+
         //add ranting: labels
         this.selectedCarLabel = new JLabel("Selected car N°:", SwingConstants.LEFT);
-        this.lnameLabel.setFont(f);
-        this.lnameLabel.setForeground(c);
+        this.selectedCarLabel.setFont(f);
+        this.selectedCarLabel.setForeground(c);
 
         this.selectedClientLabel = new JLabel("Selected client CIN:", SwingConstants.LEFT);
-        this.lnameLabel.setFont(f);
-        this.lnameLabel.setForeground(c);
+        this.selectedClientLabel.setFont(f);
+        this.selectedClientLabel.setForeground(c);
 
         this.rentalDateLabel = new JLabel("Rental date:", SwingConstants.LEFT);
-        this.lnameLabel.setFont(f);
-        this.lnameLabel.setForeground(c);
+        this.rentalDateLabel.setFont(f);
+        this.rentalDateLabel.setForeground(c);
 
         this.returnDateLabel = new JLabel("Return date: ", SwingConstants.LEFT);
-        this.lnameLabel.setFont(f);
-        this.lnameLabel.setForeground(c);
+        this.returnDateLabel.setFont(f);
+        this.returnDateLabel.setForeground(c);
 
         JLabel addLabel = new JLabel("");
         JLabel resetLabel = new JLabel("");
@@ -85,25 +92,34 @@ public class AddRantingPanel extends JPanel {
         //JFormattedTextField txtDate = new JFormattedTextField(df);
         this.rentalDateField =  new JFormattedTextField(df);
         this.returnDateField =  new JFormattedTextField(df);
+
         this.addRantingButton = new JButton("Add");
+        this.addRantingButton.setFont(f);
+        this.addRantingButton.setForeground(cc);
+        this.addRantingButton.setBackground(cccc);
+
         this.resetRantingButton = new JButton("Reset");
+        this.resetRantingButton.setFont(f);
+        this.resetRantingButton.setForeground(cc);
+        this.resetRantingButton.setBackground(cccc);
+
         //search : cars
         //labels
         this.numLabel = new JLabel("R.NUMBER: ", SwingConstants.LEFT);
-        this.lnameLabel.setFont(f);
-        this.lnameLabel.setForeground(c);
+        this.numLabel.setFont(f);
+        this.numLabel.setForeground(c);
 
         this.modelLabel = new JLabel("Model: ", SwingConstants.LEFT);
-        this.lnameLabel.setFont(f);
-        this.lnameLabel.setForeground(c);
+        this.modelLabel.setFont(f);
+        this.modelLabel.setForeground(c);
 
         this.brandLabel = new JLabel("Brand: ", SwingConstants.LEFT);
-        this.lnameLabel.setFont(f);
-        this.lnameLabel.setForeground(c);
+        this.brandLabel.setFont(f);
+        this.brandLabel.setForeground(c);
 
         this.priceLabel = new JLabel("Price: ", SwingConstants.LEFT);
-        this.lnameLabel.setFont(f);
-        this.lnameLabel.setForeground(c);
+        this.priceLabel.setFont(f);
+        this.priceLabel.setForeground(c);
 
         JLabel carsL = new JLabel("");
         //fields
@@ -113,15 +129,18 @@ public class AddRantingPanel extends JPanel {
         this.priceField = new JTextField(8);
         //button
         this.carSearchButton = new JButton("search");
+        this.carSearchButton.setFont(f);
+        this.carSearchButton.setForeground(cc);
+        this.carSearchButton.setBackground(cccc);
         //search : clients
         //labels
         this.cinLabel = new JLabel("      CIN: ", SwingConstants.LEFT);
-        this.lnameLabel.setFont(f);
-        this.lnameLabel.setForeground(c);
+        this.cinLabel.setFont(f);
+        this.cinLabel.setForeground(c);
 
         this.fnameLabel = new JLabel("First name: ", SwingConstants.LEFT);
-        this.lnameLabel.setFont(f);
-        this.lnameLabel.setForeground(c);
+        this.fnameLabel.setFont(f);
+        this.fnameLabel.setForeground(c);
 
         this.lnameLabel = new JLabel("   Last name: ", SwingConstants.LEFT);
         this.lnameLabel.setFont(f);
@@ -134,6 +153,9 @@ public class AddRantingPanel extends JPanel {
         this.lnameField = new JTextField(8);
         //button
         this.clientSearchButton = new JButton("search");
+        this.clientSearchButton.setFont(f);
+        this.clientSearchButton.setForeground(cc);
+        this.clientSearchButton.setBackground(cccc);
 
 
         //panels
@@ -203,8 +225,7 @@ public class AddRantingPanel extends JPanel {
         rightPanel.add(rightPanelBottom);
 
         //add borders to panels
-        Font ff = new Font("Tahoma", Font.PLAIN, 20);
-        Color cc = new Color(66, 134, 244);
+
         topPanel.setBorder( BorderFactory.createTitledBorder(BorderFactory.createLineBorder(new Color(66, 134, 244)),"Add a new rental"));
        ((javax.swing.border.TitledBorder) topPanel.getBorder()).setTitleFont(ff);
         ((javax.swing.border.TitledBorder) topPanel.getBorder()).setTitleColor(cc);

@@ -27,6 +27,11 @@ public class ClientsPanel extends JPanel {
         Font f = new Font("Tahoma", Font.PLAIN, 15);
         Color c = new Color (193, 73, 13);
 
+        Font ff = new Font("Tahoma", Font.PLAIN, 20);
+        Color cc = new Color(66, 134, 244);
+
+        Color cccc = new Color(247, 211, 192);
+
         this.cinLabel = new JLabel("CIN: ");
         this.cinLabel.setFont(f);
         this.cinLabel.setForeground(c);
@@ -42,12 +47,32 @@ public class ClientsPanel extends JPanel {
         this.cinField = new JTextField(8);
         this.fnameField = new JTextField(12);
         this.lnameField = new JTextField(12);
+
         this.addButton = new JButton("ADD");
+        this.addButton.setFont(f);
+        this.addButton.setForeground(cc);
+        this.addButton.setBackground(cccc);
+
         this.resetButton = new JButton("Reset");
+        this.resetButton.setFont(f);
+        this.resetButton.setForeground(cc);
+        this.resetButton.setBackground(cccc);
+
         this.exportButton = new JButton("Export");
+        this.exportButton.setFont(f);
+        this.exportButton.setForeground(cc);
+        this.exportButton.setBackground(cccc);
 
         this.deleteButton = new JButton("Delete");
+        this.deleteButton.setFont(f);
+        this.deleteButton.setForeground(cc);
+        this.deleteButton.setBackground(cccc);
+
         this.updateButton = new JButton("Update");
+        this.updateButton.setFont(f);
+        this.updateButton.setForeground(cc);
+        this.updateButton.setBackground(cccc);
+
 
         JPanel topPanel = new JPanel(new FlowLayout());
         JPanel bottomPanel = new JPanel(new FlowLayout());
@@ -66,9 +91,9 @@ public class ClientsPanel extends JPanel {
         bottomPanel.add(updateButton);
 
         //add borders to panels
-        this.setBorder( BorderFactory.createTitledBorder(BorderFactory.createLineBorder(new Color(66, 134, 244)),"Browse clients list"));
-        ((javax.swing.border.TitledBorder) this.getBorder()).setTitleFont(new Font("Tahoma", Font.PLAIN, 20));
-        ((javax.swing.border.TitledBorder) this.getBorder()).setTitleColor(new Color(66, 134, 244));
+        this.setBorder( BorderFactory.createTitledBorder(BorderFactory.createLineBorder(cc),"Browse clients list"));
+        ((javax.swing.border.TitledBorder) this.getBorder()).setTitleFont(ff);
+        ((javax.swing.border.TitledBorder) this.getBorder()).setTitleColor(cc);
 
 
 
