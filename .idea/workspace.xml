@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65c08de4-883f-4492-ac26-d4bccec582b2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/MainClass.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/MainClass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/AddRantingPanel.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/AddRantingPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/CarsPanel.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/CarsPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/ClientsPanel.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/ClientsPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/RentalsPanel.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/RentalsPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/UI.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/UI.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/AddRantingPanel.java" afterPath="$PROJECT_DIR$/src/View/AddRantingPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/CarsPanel.java" afterPath="$PROJECT_DIR$/src/View/CarsPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/ClientsPanel.java" afterPath="$PROJECT_DIR$/src/View/ClientsPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/HomePanel.java" afterPath="$PROJECT_DIR$/src/View/HomePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/RentalsPanel.java" afterPath="$PROJECT_DIR$/src/View/RentalsPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/UI.java" afterPath="$PROJECT_DIR$/src/View/UI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,21 +24,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UI.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/View/UI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+            <state relative-caret-position="215">
+              <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainClass.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="193">
+              <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -379,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516837305175</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="colors changes and buttons and frames and some other views changes">
+      <created>1516840105366</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1516840105366</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -419,7 +414,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="some view and model chnages" />
-    <option name="LAST_COMMIT_MESSAGE" value="some view and model chnages" />
+    <MESSAGE value="colors changes and buttons and frames and some other views changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="colors changes and buttons and frames and some other views changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -759,21 +755,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/UI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="193">
+          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/UI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
