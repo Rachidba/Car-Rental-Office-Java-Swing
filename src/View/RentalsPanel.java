@@ -7,44 +7,49 @@ import java.awt.*;
 
 public class RentalsPanel extends JPanel {
     private JTable table;
-    private JLabel cinLabel;
-    private JLabel fnameLabel;
-    private JLabel lnameLabel;
-    private JTextField cinField;
-    private JTextField fnameField;
-    private JTextField lnameField;
-    private JButton addButton;
-    private JButton resetButton;
     private JButton exportButton;
+    private JButton deleteButton;
+    private JButton updateButton;
 
     public RentalsPanel() {
         this.setLayout(new BorderLayout());
         this.table = new JTable(new RantalsTableModel());
-        this.cinLabel = new JLabel("CIN: ");
-        this.fnameLabel = new JLabel("First name: ");
-        this.lnameLabel = new JLabel("Last name: ");
+        //font and color
+        Font f = new Font("Tahoma", Font.PLAIN, 15);
+        Color c = new Color (193, 73, 13);
 
-        this.cinField = new JTextField(8);
-        this.fnameField = new JTextField(12);
-        this.lnameField = new JTextField(12);
+        Font ff = new Font("Tahoma", Font.PLAIN, 20);
+        Color cc = new Color(66, 134, 244);
 
-        this.addButton = new JButton("ADD");
-        this.resetButton = new JButton("Reset");
+        Color cccc = new Color(247, 211, 192);
+
         this.exportButton = new JButton("Export");
+        this.exportButton.setFont(f);
+        this.exportButton.setForeground(cc);
+        this.exportButton.setBackground(cccc);
 
-        JPanel topPanel = new JPanel(new FlowLayout());
+        this.deleteButton = new JButton("Delete");
+        this.deleteButton.setFont(f);
+        this.deleteButton.setForeground(cc);
+        this.deleteButton.setBackground(cccc);
+
+        this.updateButton = new JButton("Update");
+        this.updateButton.setFont(f);
+        this.updateButton.setForeground(cc);
+        this.updateButton.setBackground(cccc);
+
         JPanel bottomPanel = new JPanel(new FlowLayout());
 
-        topPanel.add(cinLabel);
-        topPanel.add(cinField);
-        topPanel.add(fnameLabel);
-        topPanel.add(fnameField);
-        topPanel.add(lnameLabel);
-        topPanel.add(lnameField);
-        topPanel.add(addButton);
-        topPanel.add(resetButton);
 
         bottomPanel.add(exportButton);
+        bottomPanel.add(deleteButton);
+        bottomPanel.add(updateButton);
+
+        //add borders to panels
+        this.setBorder( BorderFactory.createTitledBorder(BorderFactory.createLineBorder(cc),"Browse rentals list"));
+        ((javax.swing.border.TitledBorder) this.getBorder()).setTitleFont(ff);
+        ((javax.swing.border.TitledBorder) this.getBorder()).setTitleColor(cc);
+
 
         //this.add(topPanel, BorderLayout.NORTH);
         this.add(new JScrollPane(table), BorderLayout.CENTER);
@@ -55,37 +60,6 @@ public class RentalsPanel extends JPanel {
         return table;
     }
 
-    public JLabel getCinLabel() {
-        return cinLabel;
-    }
-
-    public JLabel getFnameLabel() {
-        return fnameLabel;
-    }
-
-    public JLabel getLnameLabel() {
-        return lnameLabel;
-    }
-
-    public JTextField getCinField() {
-        return cinField;
-    }
-
-    public JTextField getFnameField() {
-        return fnameField;
-    }
-
-    public JTextField getLnameField() {
-        return lnameField;
-    }
-
-    public JButton getAddButton() {
-        return addButton;
-    }
-
-    public JButton getResetButton() {
-        return resetButton;
-    }
 
     public JButton getExportButton() {
         return exportButton;

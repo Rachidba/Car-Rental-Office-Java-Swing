@@ -6,7 +6,7 @@ package Model;
  * @version 1.0
  * @created 20-Jan-2018 5:40:27 PM
  */
-public class BrandCriterion implements Criterion {
+public class BrandCriterion implements Criterion<Car> {
 
 	private String brand;
 

@@ -8,7 +8,7 @@ import java.util.Vector;
  * @version 1.0
  * @created 20-Jan-2018 5:40:26 PM
  */
-public class CriteriaInter implements Criterion {
+public class CriteriaInter implements Criterion<Car> {
 
 	private Vector<Criterion> criterions;
 

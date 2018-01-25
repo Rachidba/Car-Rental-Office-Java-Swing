@@ -1,7 +1,15 @@
 import Controller.CarController;
 import Controller.ClientController;
+import Model.*;
+
+import java.sql.*;
+
 
 import View.*;
+
+import javax.swing.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class MainClass {
     public static void main(String[] args) {
@@ -9,8 +17,8 @@ public class MainClass {
         CarsPanel carsPanel = new CarsPanel();
         RentalsPanel rentalsPanel = new RentalsPanel();
         AddRantingPanel addRantingPanel = new AddRantingPanel();
-
-        UI ui = new UI(clientsPanel, carsPanel, rentalsPanel, addRantingPanel);
+        HomePanel home = new HomePanel();
+        UI ui = new UI(clientsPanel, carsPanel, rentalsPanel, addRantingPanel, home);
 
         ClientController clientController = new ClientController(clientsPanel);
         CarController carController = new CarController(carsPanel);

@@ -96,6 +96,7 @@ public class CarDAO extends DAO<Car> {
 		}
 		return null;
 	}
+	//public List<Car> find(String)
 
 	@Override
 	public List<Car> all() {

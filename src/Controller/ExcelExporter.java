@@ -12,13 +12,14 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Date;
+import java.util.Vector;
 
 public class ExcelExporter {
     private static HSSFWorkbook workbook;
     private static HSSFSheet sheet;
 
 
-    public static boolean export(String[] titles, Object[][] dat, String fileName) {
+    public static boolean export(String[] titles, Vector<String[]> dat, String fileName) {
         workbook = new HSSFWorkbook();
         sheet = workbook.createSheet("Sheet");
 
@@ -37,9 +38,9 @@ public class ExcelExporter {
             cell.setCellStyle(style);
         }
         //For the liste
-        for (int i = 0; i < dat.length; i++) {
+        for (int i = 0; i < dat.size(); i++) {
             row = sheet.createRow(rowNum++);
-            Object [] objArr = dat[i];
+            Object [] objArr = dat.get(i);
             int cellnum = 2;
             for (Object obj : objArr) {
                 Cell cell = row.createCell(cellnum++);

@@ -6,30 +6,27 @@ import java.util.Vector;
 
 public class CarTableModel extends AbstractTableModel{
     private String[] titles = {"R.NUMBER", "Model", "Brand", "Price"};
-    private Object[][] data;
+    private Vector<String[]> data;
     List<Car> cars;
 
     public CarTableModel() {
+
         cars = DAOFactory.getCarDAO().all();
         this.loadData();
+
     }
 
     public void loadData() {
-        int i=0;
-        this.data = new Object[cars.size()][5];
+        this.data = new Vector<String[]>();//[clients.size()][3];
         for(Car c:cars) {
-            data[i][0] = c.getRegistrationNumber();
-            data[i][1] = c.getModel();
-            data[i][2] = c.getBrand();
-            data[i][3] = String.valueOf(c.getPrice());
-            data[i][4] = new Boolean(false);
-            i++;
+            String[] str = {c.getRegistrationNumber(), c.getModel(), c.getBrand(), String.valueOf(c.getPrice())};
+            data.add (str);
         }
         fireTableChanged(null);
     }
 
     public int getRowCount() {
-        return this.data.length;
+        return this.data.size();
     }
 
     public int getColumnCount() {
@@ -37,7 +34,7 @@ public class CarTableModel extends AbstractTableModel{
     }
 
     public Object getValueAt(int rowIndex, int columnIndex) {
-        return this.data[rowIndex][columnIndex];
+        return this.data.get(rowIndex)[columnIndex];
     }
 
     public String getColumnName(int col) {
@@ -48,7 +45,22 @@ public class CarTableModel extends AbstractTableModel{
         return titles;
     }
 
-    public Object[][] getData() {
+    public Vector<String[]> getData() {
         return data;
+    }
+
+    public void removeRow(int i) {
+        this.data.remove(i);
+        fireTableChanged(null);
+    }
+
+    public void setRow(int i, String[] str) {
+        this.data.set(i, str);
+        fireTableChanged(null);
+    }
+
+    public void addRow(String[] str) {
+        this.data.add(str);
+        fireTableChanged(null);
     }
 }
