@@ -21,4 +21,8 @@ public class PriceCriterion implements Criterion<Car> {
 	public boolean isSatisfiedBy(Car c) {
 		return c.getPrice() <= this.price;
 	}
+
+	public double getPrice() {
+		return price;
+	}
 }

@@ -1,3 +1,4 @@
+import Controller.AddRantingController;
 import Controller.CarController;
 import Controller.ClientController;
 import Model.*;
@@ -22,6 +23,7 @@ public class MainClass {
 
         ClientController clientController = new ClientController(clientsPanel);
         CarController carController = new CarController(carsPanel);
+        AddRantingController addRantingPanel1 = new AddRantingController(addRantingPanel);
 
         ui.setVisible(true);
     }

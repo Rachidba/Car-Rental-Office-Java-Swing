@@ -21,4 +21,8 @@ public class ModeleCriterion implements Criterion<Car> {
 	public boolean isSatisfiedBy(Car c) {
 		return c.getModel().equals(this.model);
 	}
+
+	public String getModel() {
+		return model;
+	}
 }

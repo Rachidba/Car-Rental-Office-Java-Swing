@@ -8,20 +8,24 @@ public class ClientTableModel extends AbstractTableModel {
     private String[] titles = {"CIN", "First Name", "LAST NAME"};
     //private Object[][] data ;
     private Vector<String[]> data;
-    List<Client> clients;
+    //List<Client> clients;
 
     public ClientTableModel() {
-        clients = DAOFactory.getClientDAO().all();
-        this.loadData();
+        //clients = DAOFactory.getClientDAO().all();
+        initData();
     }
 
-    public void loadData() {
+    public void loadData(List<Client> clients) {
         this.data = new Vector<String[]>();//[clients.size()][3];
         for(Client c:clients) {
             String[] str = {c.getCIN(), c.getFirstName(), c.getLastName()};
             data.add (str);
         }
         fireTableChanged(null);
+    }
+
+    public void initData() {
+        this.loadData(DAOFactory.getClientDAO().all());
     }
 
     public int getRowCount() {

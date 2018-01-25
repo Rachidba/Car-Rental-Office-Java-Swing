@@ -6,6 +6,8 @@ import Model.DAOFactory;
 import View.ClientsPanel;
 
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -21,6 +23,17 @@ public class ClientController implements ActionListener {
 		this.clientsPanel.getExportButton().addActionListener(this);
 		this.clientsPanel.getDeleteButton().addActionListener(this);
 		this.clientsPanel.getUpdateButton().addActionListener(this);
+
+		/*final ListSelectionModel lsm = this.clientsPanel.getTable().getSelectionModel();
+		lsm.addListSelectionListener(new ListSelectionListener() {
+			@Override
+			public void valueChanged(ListSelectionEvent e) {
+				if(! lsm.isSelectionEmpty()) {
+					int selectedRow = lsm.getMinSelectionIndex();
+					//System.out.println(selectedRow);
+				}
+			}
+		});*/
 	}
 
 	public void finalize() throws Throwable {

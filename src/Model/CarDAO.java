@@ -96,7 +96,7 @@ public class CarDAO extends DAO<Car> {
 		}
 		return null;
 	}
-	//public List<Car> find(String)
+
 
 	@Override
 	public List<Car> all() {
@@ -123,6 +123,54 @@ public class CarDAO extends DAO<Car> {
 		return cars;
 	}
 
+	public List<Car> search(CarCriterionInter criterion){
+		if(!criterion.getCriterions().isEmpty()){
+			String query = " SELECT * FROM car WHERE ";
+			if(criterion.getCriterions().firstElement() instanceof ModeleCriterion){
+				query += " model = \""+((ModeleCriterion)(criterion.getCriterions().firstElement())).getModel() + "\"";
+			}else if(criterion.getCriterions().firstElement() instanceof BrandCriterion){
+				query += " brand = \""+((BrandCriterion)(criterion.getCriterions().firstElement())).getBrand() + "\"";
+			}else if(criterion.getCriterions().firstElement() instanceof RegistrationNumberCriterion){
+				query += " registrationNumber = \""+((RegistrationNumberCriterion)(criterion.getCriterions().firstElement())).getRegistrationNumber() + "\"";
+			}else if(criterion.getCriterions().firstElement() instanceof PriceCriterion){
+				query+= " price <= "+((PriceCriterion)(criterion.getCriterions().firstElement())).getPrice();
+			}
+
+			for(Criterion<Car> item : criterion.getCriterions()){
+				if(item instanceof ModeleCriterion){
+					query += " AND model = \""+((ModeleCriterion)item).getModel() + "\"";
+				}else if(item instanceof BrandCriterion){
+					query += " AND brand = \""+((BrandCriterion)item).getBrand() + "\"";
+				}else if(item instanceof RegistrationNumberCriterion){
+					query += " AND registrationNumber = \""+((RegistrationNumberCriterion)item).getRegistrationNumber() + "\"";
+				}else if(item instanceof PriceCriterion){
+					query += " AND price <= "+((PriceCriterion)item).getPrice();
+				}
+			}
+			query += " ;";
+			Vector<Car> cars = new Vector<>();
+			try {
+				PreparedStatement state = this.connection.prepareStatement(query,
+						ResultSet.TYPE_FORWARD_ONLY,
+						ResultSet.CONCUR_READ_ONLY);
+				ResultSet result = state.executeQuery();
+				while(result.next()){
+					cars.add(new Car(
+							result.getString("registrationNumber"),
+							result.getString("model"),
+							result.getString("brand"),
+							result.getDouble("price")
+							)
+					);
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+
+			return cars;
+		}
+		return null;
+	}
 
 	public void finalize() throws Throwable {
 		super.finalize();

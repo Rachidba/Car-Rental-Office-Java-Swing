@@ -4,14 +4,14 @@ import Model.CarTableModel;
 import Model.ClientTableModel;
 
 import javax.swing.*;
-import javax.swing.border.TitledBorder;
-import javax.swing.table.DefaultTableCellRenderer;
 import java.awt.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
 public class AddRantingPanel extends JPanel {
     //tables to search
+    private ClientTableModel clientModel;
+    private CarTableModel carModel;
     private JTable clientsTable;
     private JTable carsTable;
     //labels: add new ranting
@@ -49,11 +49,14 @@ public class AddRantingPanel extends JPanel {
     private JButton addRantingButton;
     private JButton resetRantingButton;
 
+
     public AddRantingPanel() {
         this.setLayout(new BorderLayout());
         //get data from DB
-        this.clientsTable = new JTable(new ClientTableModel());
-        this.carsTable = new JTable(new CarTableModel());
+        clientModel = new ClientTableModel();
+        carModel = new CarTableModel();
+        this.clientsTable = new JTable(clientModel);
+        this.carsTable = new JTable(carModel);
         //components
         //font and color
         Font f = new Font("Tahoma", Font.PLAIN, 15);
@@ -73,11 +76,11 @@ public class AddRantingPanel extends JPanel {
         this.selectedClientLabel.setFont(f);
         this.selectedClientLabel.setForeground(c);
 
-        this.rentalDateLabel = new JLabel("Rental date:", SwingConstants.LEFT);
+        this.rentalDateLabel = new JLabel("Rental date(yyyy-MM-dd):", SwingConstants.LEFT);
         this.rentalDateLabel.setFont(f);
         this.rentalDateLabel.setForeground(c);
 
-        this.returnDateLabel = new JLabel("Return date: ", SwingConstants.LEFT);
+        this.returnDateLabel = new JLabel("Return date(yyyy-MM-dd): ", SwingConstants.LEFT);
         this.returnDateLabel.setFont(f);
         this.returnDateLabel.setForeground(c);
 
@@ -88,7 +91,7 @@ public class AddRantingPanel extends JPanel {
         this.selectedClient= new JTextField("NONE", SwingConstants.LEFT);
         this.selectedClient.setEditable(false);
         this.selectedCar.setEditable(false);
-        DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
         //JFormattedTextField txtDate = new JFormattedTextField(df);
         this.rentalDateField =  new JFormattedTextField(df);
         this.returnDateField =  new JFormattedTextField(df);
@@ -243,8 +246,138 @@ public class AddRantingPanel extends JPanel {
         this.add(topPanel, BorderLayout.NORTH);
         this.add(rightPanel, BorderLayout.EAST);
         this.add(leftPanel, BorderLayout.WEST);
+
+
     }
     public void paintComponent(Graphics g){
 
+    }
+
+    public ClientTableModel getClientModel() {
+        return clientModel;
+    }
+
+    public CarTableModel getCarModel() {
+        return carModel;
+    }
+
+    public JTable getClientsTable() {
+        return clientsTable;
+    }
+
+    public JTable getCarsTable() {
+        return carsTable;
+    }
+
+    public JLabel getSelectedCarLabel() {
+        return selectedCarLabel;
+    }
+
+    public JLabel getSelectedClientLabel() {
+        return selectedClientLabel;
+    }
+
+    public JLabel getRentalDateLabel() {
+        return rentalDateLabel;
+    }
+
+    public JLabel getReturnDateLabel() {
+        return returnDateLabel;
+    }
+
+    public JTextField getSelectedCar() {
+        return selectedCar;
+    }
+
+    public JTextField getSelectedClient() {
+        return selectedClient;
+    }
+
+    public JTextField getRentalDateField() {
+        return rentalDateField;
+    }
+
+    public JTextField getReturnDateField() {
+        return returnDateField;
+    }
+
+    public JLabel getCinLabel() {
+        return cinLabel;
+    }
+
+    public JLabel getFnameLabel() {
+        return fnameLabel;
+    }
+
+    public JLabel getLnameLabel() {
+        return lnameLabel;
+    }
+
+    public JTextField getCinField() {
+        return cinField;
+    }
+
+    public JTextField getFnameField() {
+        return fnameField;
+    }
+
+    public JTextField getLnameField() {
+        return lnameField;
+    }
+
+    public JLabel getNumLabel() {
+        return numLabel;
+    }
+
+    public JLabel getModelLabel() {
+        return modelLabel;
+    }
+
+    public JLabel getBrandLabel() {
+        return brandLabel;
+    }
+
+    public JLabel getPriceLabel() {
+        return priceLabel;
+    }
+
+    public JTextField getNumField() {
+        return numField;
+    }
+
+    public JTextField getModelField() {
+        return modelField;
+    }
+
+    public JTextField getBrandField() {
+        return brandField;
+    }
+
+    public JTextField getPriceField() {
+        return priceField;
+    }
+
+    public JButton getClientSearchButton() {
+        return clientSearchButton;
+    }
+
+    public JButton getCarSearchButton() {
+        return carSearchButton;
+    }
+
+    public JButton getAddRantingButton() {
+        return addRantingButton;
+    }
+
+    public JButton getResetRantingButton() {
+        return resetRantingButton;
+    }
+
+    public void setClientModel(ClientTableModel clientModel) {
+        this.clientModel = clientModel;
+    }
+
+    public void setCarModel(CarTableModel carModel) {
+        this.carModel = carModel;
     }
 }

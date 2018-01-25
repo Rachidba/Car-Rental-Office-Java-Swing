@@ -171,4 +171,8 @@ public class CarsPanel extends JPanel {
     public CarTableModel getModel() {
         return model;
     }
+
+    public void setModel(CarTableModel model) {
+        this.model = model;
+    }
 }

@@ -7,6 +7,5 @@ package Model;
  * @created 20-Jan-2018 5:40:25 PM
  */
 public interface Criterion<T> {
-
     public boolean isSatisfiedBy(T c);
 }

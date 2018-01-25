@@ -157,4 +157,8 @@ public class ClientsPanel extends JPanel {
     public JButton getExportButton() {
         return exportButton;
     }
+
+    public void setModel(ClientTableModel model) {
+        this.model = model;
+    }
 }

@@ -1,11 +1,14 @@
 package View;
 
 import Model.RantalsTableModel;
+import javafx.beans.Observable;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Observer;
 
-public class RentalsPanel extends JPanel {
+public class RentalsPanel extends JPanel implements Observer {
+    private RantalsTableModel model;
     private JTable table;
     private JButton exportButton;
     private JButton deleteButton;
@@ -13,7 +16,8 @@ public class RentalsPanel extends JPanel {
 
     public RentalsPanel() {
         this.setLayout(new BorderLayout());
-        this.table = new JTable(new RantalsTableModel());
+        this.model = new RantalsTableModel();
+        this.table = new JTable(model);
         //font and color
         Font f = new Font("Tahoma", Font.PLAIN, 15);
         Color c = new Color (193, 73, 13);
@@ -63,5 +67,10 @@ public class RentalsPanel extends JPanel {
 
     public JButton getExportButton() {
         return exportButton;
+    }
+
+    @Override
+    public void update(java.util.Observable o, Object arg) {
+        this.model.initData();
     }
 }

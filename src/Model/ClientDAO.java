@@ -122,8 +122,51 @@ public class ClientDAO extends DAO<Client> {
 		return clients;
 	}
 
+
+	public List<Client> search(ClientCriterionInter criterion){
+		if(!criterion.getCriterions().isEmpty()){
+			String query = "SELECT * FROM client WHERE ";
+			if(criterion.getCriterions().firstElement() instanceof CINCriterion){
+					query += " CIN = \""+((CINCriterion)(criterion.getCriterions().firstElement())).getCIN() + "\"";
+			}else if(criterion.getCriterions().firstElement() instanceof FnameCriterion){
+				query += " firstName = \""+((FnameCriterion)(criterion.getCriterions().firstElement())).getFname() + "\"";
+			}else if(criterion.getCriterions().firstElement() instanceof LnameCriterion){
+				query += " lastName = \""+((LnameCriterion)(criterion.getCriterions().firstElement())).getLname() + "\"";
+			}
+
+			for(Criterion<Client> item : criterion.getCriterions()){
+				if(item instanceof CINCriterion){
+					query += " AND CIN = \""+((CINCriterion)item).getCIN() + "\"";
+				}else if(item instanceof FnameCriterion){
+					query += " AND firstName = \""+((FnameCriterion)item).getFname() + "\"";
+				}else if(item instanceof LnameCriterion){
+					query += " AND lastName = \""+((LnameCriterion)item).getLname() + "\"";
+				}
+			}
+			query += " ;";
+			Vector<Client> clients = new Vector<>();
+			try {
+				PreparedStatement state = this.connection.prepareStatement(query,
+						ResultSet.TYPE_FORWARD_ONLY,
+						ResultSet.CONCUR_READ_ONLY);
+				ResultSet result = state.executeQuery();
+				while(result.next()){
+					clients.add(new Client(
+							result.getString("CIN"),
+							result.getString("firstName"),
+							result.getString("lastName"))
+					);
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+
+			return clients;
+		}
+		return null;
+	}
+
 	public void finalize() throws Throwable {
 		super.finalize();
 	}
-
 }

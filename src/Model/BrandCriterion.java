@@ -23,4 +23,7 @@ public class BrandCriterion implements Criterion<Car> {
 		return c.getBrand().equals(this.brand);
 	}
 
+	public String getBrand() {
+		return brand;
+	}
 }

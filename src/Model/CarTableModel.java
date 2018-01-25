@@ -7,22 +7,22 @@ import java.util.Vector;
 public class CarTableModel extends AbstractTableModel{
     private String[] titles = {"R.NUMBER", "Model", "Brand", "Price"};
     private Vector<String[]> data;
-    List<Car> cars;
 
     public CarTableModel() {
-
-        cars = DAOFactory.getCarDAO().all();
-        this.loadData();
-
+        initData();
     }
 
-    public void loadData() {
+    public void loadData(List<Car> cars) {
         this.data = new Vector<String[]>();//[clients.size()][3];
         for(Car c:cars) {
             String[] str = {c.getRegistrationNumber(), c.getModel(), c.getBrand(), String.valueOf(c.getPrice())};
             data.add (str);
         }
         fireTableChanged(null);
+    }
+
+    public void initData() {
+        this.loadData(DAOFactory.getCarDAO().all());
     }
 
     public int getRowCount() {
