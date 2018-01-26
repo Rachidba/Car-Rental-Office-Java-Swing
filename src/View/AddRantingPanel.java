@@ -65,7 +65,7 @@ public class AddRantingPanel extends JPanel {
         Font ff = new Font("Tahoma", Font.PLAIN, 20);
         Color cc = new Color(66, 134, 244);
 
-        Color cccc = new Color(247, 211, 192);
+        Color cccc = Color.white;
 
         //add ranting: labels
         this.selectedCarLabel = new JLabel("Selected car N°:", SwingConstants.LEFT);
@@ -76,19 +76,19 @@ public class AddRantingPanel extends JPanel {
         this.selectedClientLabel.setFont(f);
         this.selectedClientLabel.setForeground(c);
 
-        this.rentalDateLabel = new JLabel("Rental date(yyyy-MM-dd):", SwingConstants.LEFT);
+        this.rentalDateLabel = new JLabel("Rental date:(Y-M-D)", SwingConstants.LEFT);
         this.rentalDateLabel.setFont(f);
         this.rentalDateLabel.setForeground(c);
 
-        this.returnDateLabel = new JLabel("Return date(yyyy-MM-dd): ", SwingConstants.LEFT);
+        this.returnDateLabel = new JLabel("Return date:(Y-M-D)", SwingConstants.LEFT);
         this.returnDateLabel.setFont(f);
         this.returnDateLabel.setForeground(c);
 
         JLabel addLabel = new JLabel("");
         JLabel resetLabel = new JLabel("");
         //add ranting content
-        this.selectedCar = new JTextField("NONE", SwingConstants.LEFT);
-        this.selectedClient= new JTextField("NONE", SwingConstants.LEFT);
+        this.selectedCar = new JTextField(SwingConstants.LEFT);
+        this.selectedClient= new JTextField(SwingConstants.LEFT);
         this.selectedClient.setEditable(false);
         this.selectedCar.setEditable(false);
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
@@ -160,6 +160,15 @@ public class AddRantingPanel extends JPanel {
         this.clientSearchButton.setForeground(cc);
         this.clientSearchButton.setBackground(cccc);
 
+        ImageIcon addI = new ImageIcon("png/add.PNG");
+        this.addRantingButton.setIcon(addI);
+        ImageIcon resetI = new ImageIcon("png/reset.PNG");
+        this.resetRantingButton.setIcon(resetI);
+        ImageIcon searchCarI = new ImageIcon("png/search.PNG");
+        this.carSearchButton.setIcon(searchCarI);
+        ImageIcon searchClientI = new ImageIcon("png/search.PNG");
+        this.clientSearchButton.setIcon(searchClientI);
+
 
         //panels
         //for add ranting
@@ -197,14 +206,14 @@ public class AddRantingPanel extends JPanel {
         //car : top
         //row 1
         leftPanelTop.add(this.numLabel);
-        leftPanelTop.add(this.brandLabel);
         leftPanelTop.add(this.modelLabel);
+        leftPanelTop.add(this.brandLabel);
         leftPanelTop.add(this.priceLabel);
         leftPanelTop.add(carsL);
         //row 2
         leftPanelTop.add(this.numField);
-        leftPanelTop.add(this.brandField);
         leftPanelTop.add(this.modelField);
+        leftPanelTop.add(this.brandField);
         leftPanelTop.add(this.priceField);
         leftPanelTop.add(carSearchButton);
         //car bottom

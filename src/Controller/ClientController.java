@@ -23,17 +23,6 @@ public class ClientController implements ActionListener {
 		this.clientsPanel.getExportButton().addActionListener(this);
 		this.clientsPanel.getDeleteButton().addActionListener(this);
 		this.clientsPanel.getUpdateButton().addActionListener(this);
-
-		/*final ListSelectionModel lsm = this.clientsPanel.getTable().getSelectionModel();
-		lsm.addListSelectionListener(new ListSelectionListener() {
-			@Override
-			public void valueChanged(ListSelectionEvent e) {
-				if(! lsm.isSelectionEmpty()) {
-					int selectedRow = lsm.getMinSelectionIndex();
-					//System.out.println(selectedRow);
-				}
-			}
-		});*/
 	}
 
 	public void finalize() throws Throwable {
@@ -62,16 +51,18 @@ public class ClientController implements ActionListener {
 
 					this.clientsPanel.getAddButton().setText("Add");
 					this.clientsPanel.getCinField().setEnabled(true);
+					JOptionPane.showMessageDialog (null, "This client has been updated !","Information", JOptionPane.INFORMATION_MESSAGE);
 				} else {
 					this.clientDAO.create(client);
 					this.clientsPanel.getModel().addRow(str);
+					JOptionPane.showMessageDialog (null, "This client has been added !","Information", JOptionPane.INFORMATION_MESSAGE);
 				}
 				this.clientsPanel.getLnameField().setText("");
 				this.clientsPanel.getFnameField().setText("");
 				this.clientsPanel.getCinField().setText("");
 			}
 			else {
-				int dialogResult = JOptionPane.showConfirmDialog (null, "There is an empty field!","Warning", JOptionPane.DEFAULT_OPTION);
+				JOptionPane.showMessageDialog (null, "There is an empty field!","Error", JOptionPane.ERROR_MESSAGE);
 			}
 		} else if (e.getSource() == this.clientsPanel.getResetButton()) {
 			this.clientsPanel.getLnameField().setText("");
@@ -80,8 +71,9 @@ public class ClientController implements ActionListener {
 			this.clientsPanel.getCinField().setEnabled(true);
 		} else if (e.getSource() == this.clientsPanel.getExportButton()){
 			ExcelExporter.export(this.clientsPanel.getModel().getTitles(), this.clientsPanel.getModel().getData(), "Clients.xls");
+			JOptionPane.showMessageDialog (null, "Export of clients done !?","Information", JOptionPane.INFORMATION_MESSAGE);
 		} else if (e.getSource() == this.clientsPanel.getDeleteButton()) {
-			int dialogResult = JOptionPane.showConfirmDialog (null, "Would You Like to Delete selected elements?","Warning", JOptionPane.DEFAULT_OPTION);
+			int dialogResult = JOptionPane.showConfirmDialog (null, "Would You Like to Delete selected elements?","Warning", JOptionPane.WARNING_MESSAGE);
 			if(dialogResult == JOptionPane.YES_OPTION){
 				int[] selection = this.clientsPanel.getTable().getSelectedRows();
 				for(int i = 0; i < selection.length; i++) {
@@ -96,7 +88,7 @@ public class ClientController implements ActionListener {
 		} else if (e.getSource() == this.clientsPanel.getUpdateButton()) {
 			int[] selection = this.clientsPanel.getTable().getSelectedRows();
 			if (selection.length == 1) {
-				int dialogResult = JOptionPane.showConfirmDialog (null, "Would You Like to Delete selected elements?","Warning", JOptionPane.DEFAULT_OPTION);
+				int dialogResult = JOptionPane.showConfirmDialog (null, "Would You Like to Update selected elements?","Warning", JOptionPane.WARNING_MESSAGE);
 				if(dialogResult == JOptionPane.YES_OPTION){
 					this.clientsPanel.getCinField().setText(this.clientsPanel.getTable().getModel().getValueAt(selection[0], 0).toString());
 					this.clientsPanel.getCinField().setEnabled(false);
@@ -105,7 +97,7 @@ public class ClientController implements ActionListener {
 					this.clientsPanel.getAddButton().setText("Modify");
 				}
 			} else {
-				int dialogResult = JOptionPane.showConfirmDialog (null, "You have to choose just one row!","Warning", JOptionPane.DEFAULT_OPTION);
+				JOptionPane.showMessageDialog (null, "You have to choose just one row!","Error", JOptionPane.ERROR_MESSAGE);
 			}
 		}
 	}

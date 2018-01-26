@@ -100,19 +100,30 @@ public class AddRantingController extends Observable implements ActionListener {
                this.rantingPanel.getCarModel().loadData(carDAO.search(criterionInter));
            }
        } if (e.getSource() == this.rantingPanel.getAddRantingButton()) {
-            rantingDAO.create(new Ranting(0,
-                    new Car(this.rantingPanel.getSelectedCar().getText(), "", "", 0.0),
-                    new Client(this.rantingPanel.getSelectedClient().getText(), "", ""),
-                    false,
-                    java.sql.Date.valueOf(this.rantingPanel.getRentalDateField().getText()),
-                    java.sql.Date.valueOf(this.rantingPanel.getReturnDateField().getText())
-            ));
-            this.rantingPanel.getSelectedClient().setText("");
-            this.rantingPanel.getSelectedCar().setText("");
-            this.rantingPanel.getRentalDateField().setText("");
-            this.rantingPanel.getReturnDateField().setText("");
-            this.setChanged();
-            this.notifyObservers();
+           if(
+               !this.rantingPanel.getSelectedCar().getText().equals("") &&
+               !this.rantingPanel.getSelectedClient().getText().equals("") &&
+               !this.rantingPanel.getRentalDateField().getText().equals("") &&
+               !this.rantingPanel.getReturnDateField().getText().equals("")
+               ){
+               rantingDAO.create(new Ranting(0,
+                       new Car(this.rantingPanel.getSelectedCar().getText(), "", "", 0.0),
+                       new Client(this.rantingPanel.getSelectedClient().getText(), "", ""),
+                       false,
+                       java.sql.Date.valueOf(this.rantingPanel.getRentalDateField().getText()),
+                       java.sql.Date.valueOf(this.rantingPanel.getReturnDateField().getText())
+               ));
+               JOptionPane.showMessageDialog (null, "This renting has been added !","Information", JOptionPane.INFORMATION_MESSAGE);
+               this.rantingPanel.getSelectedClient().setText("");
+               this.rantingPanel.getSelectedCar().setText("");
+               this.rantingPanel.getRentalDateField().setText("");
+               this.rantingPanel.getReturnDateField().setText("");
+               this.setChanged();
+               this.notifyObservers();
+           }else {
+               JOptionPane.showMessageDialog (null, "There is an empty field!","Error", JOptionPane.ERROR_MESSAGE);
+           }
+
         } if (e.getSource() == this.rantingPanel.getResetRantingButton()) {
            this.rantingPanel.getSelectedClient().setText("");
            this.rantingPanel.getSelectedCar().setText("");

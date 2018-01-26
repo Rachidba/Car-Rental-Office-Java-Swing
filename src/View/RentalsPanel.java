@@ -8,9 +8,22 @@ import java.awt.*;
 import java.util.Observer;
 
 public class RentalsPanel extends JPanel implements Observer {
+    public RantalsTableModel getModel() {
+        return model;
+    }
+
     private RantalsTableModel model;
     private JTable table;
     private JButton exportButton;
+
+    public JButton getDeleteButton() {
+        return deleteButton;
+    }
+
+    public JButton getUpdateButton() {
+        return updateButton;
+    }
+
     private JButton deleteButton;
     private JButton updateButton;
 
@@ -25,7 +38,7 @@ public class RentalsPanel extends JPanel implements Observer {
         Font ff = new Font("Tahoma", Font.PLAIN, 20);
         Color cc = new Color(66, 134, 244);
 
-        Color cccc = new Color(247, 211, 192);
+        Color cccc = Color.white;
 
         this.exportButton = new JButton("Export");
         this.exportButton.setFont(f);
@@ -41,6 +54,14 @@ public class RentalsPanel extends JPanel implements Observer {
         this.updateButton.setFont(f);
         this.updateButton.setForeground(cc);
         this.updateButton.setBackground(cccc);
+
+        //button icons
+        ImageIcon deleteI = new ImageIcon("png/delete.PNG");
+        this.deleteButton.setIcon(deleteI);
+        ImageIcon updateI = new ImageIcon("png/update.PNG");
+        this.updateButton.setIcon(updateI);
+        ImageIcon exportI = new ImageIcon("png/export.PNG");
+        this.exportButton.setIcon(exportI);
 
         JPanel bottomPanel = new JPanel(new FlowLayout());
 

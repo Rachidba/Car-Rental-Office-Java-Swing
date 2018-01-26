@@ -25,7 +25,7 @@ public class HomePanel extends JPanel {
     }
     public void paintComponent(Graphics g){
         Graphics2D g2d = (Graphics2D)g;
-        GradientPaint gp = new GradientPaint(30, 30, Color.white, 0, 0, Color.lightGray, true);
+        GradientPaint gp = new GradientPaint(0, 0, Color.white, 0, 15, Color.lightGray, true);
         g2d.setPaint(gp);
         g2d.fillRect(0, 0, this.getWidth(), this.getHeight());
         Font f = new Font("Tahoma", Font.PLAIN, 20);
@@ -43,6 +43,6 @@ public class HomePanel extends JPanel {
         g.drawString("Car Rental Office Application", 440,this.getHeight()/2+40);
         g.setColor(ccc);
         g.setFont(fff);
-        g.drawString("Copyright © 2018, 2018 ILISI and/or its affiliates. All rights reserved.", this.getWidth()/4*3-100,this.getHeight()-10);
+        g.drawString("Copyright © 2017, 2018 ILISI and/or its affiliates. All rights reserved.", this.getWidth()/4*3-90,this.getHeight()-10);
     }
 }

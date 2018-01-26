@@ -31,7 +31,7 @@ public class UI extends JFrame{
         this.getContentPane().add(tabbedPane);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setTitle("Car Rental Office");
-        this.setSize(1130, 600);
+        this.setSize(1140, 600);
         ImageIcon img = new ImageIcon("png/racing.PNG");
         this.setIconImage(img.getImage());
         this.setResizable(false);

@@ -32,7 +32,6 @@ public class CarController implements ActionListener{
 					&& !this.carsPanel.getModelField().getText().equals("")
 					&& !this.carsPanel.getBrandField().getText().equals("")
 					&& !this.carsPanel.getPriceField().getText().equals("")) {
-				System.out.println("Pss!");
 				//create a new car from field with dao
 				Car car = new Car( this.carsPanel.getNumField().getText(),
 						this.carsPanel.getModelField().getText(),
@@ -42,7 +41,9 @@ public class CarController implements ActionListener{
 						this.carsPanel.getNumField().getText(),
 						this.carsPanel.getModelField().getText(),
 						this.carsPanel.getBrandField().getText(),
-						this.carsPanel.getPriceField().getText()};
+						this.carsPanel.getPriceField().getText()
+				};
+
 				if(this.carsPanel.getAddButton().getText().equals("Modify")) {
 					this.carDAO.update(car);
 					int i = this.carsPanel.getTable().getSelectedRow();
@@ -51,20 +52,24 @@ public class CarController implements ActionListener{
 
 					this.carsPanel.getAddButton().setText("Add");
 					this.carsPanel.getNumField().setEnabled(true);
+					JOptionPane.showMessageDialog (null, "This car has been updated !","Information", JOptionPane.INFORMATION_MESSAGE);
 				} else {
 					this.carDAO.create(car);
 					this.carsPanel.getModel().addRow(str);
+					JOptionPane.showMessageDialog (null, "This car has been added !","Information", JOptionPane.INFORMATION_MESSAGE);
 				}
 				this.carsPanel.getNumField().setText("");
 				this.carsPanel.getModelField().setText("");
 				this.carsPanel.getBrandField().setText("");
 				this.carsPanel.getPriceField().setText("");
 			} else {
-				int dialogResult = JOptionPane.showConfirmDialog (null, "There is an empty field!","Warning", JOptionPane.DEFAULT_OPTION);
+				JOptionPane.showMessageDialog (null, "There is an empty field!","Error", JOptionPane.ERROR_MESSAGE);
 			}
 
 		} else if (e.getSource() == this.carsPanel.getExportButton()){
 			ExcelExporter.export(this.carsPanel.getModel().getTitles(), this.carsPanel.getModel().getData(), "Cars.xls");
+			JOptionPane.showMessageDialog (null, "Export of cars done !?","Information", JOptionPane.INFORMATION_MESSAGE);
+
 		} else if (e.getSource() == this.carsPanel.getResetButton()) {
 			this.carsPanel.getNumField().setText("");
 			this.carsPanel.getModelField().setText("");
@@ -72,7 +77,7 @@ public class CarController implements ActionListener{
 			this.carsPanel.getPriceField().setText("");
 			this.carsPanel.getNumField().setEnabled(true);
 		}else if (e.getSource() == this.carsPanel.getDeleteButton()) {
-			int dialogResult = JOptionPane.showConfirmDialog (null, "Would You Like to Delete selected elements?","Warning", JOptionPane.DEFAULT_OPTION);
+			int dialogResult = JOptionPane.showConfirmDialog (null, "Would You Like to Delete selected elements?","Warning", JOptionPane.WARNING_MESSAGE);
 			if(dialogResult == JOptionPane.YES_OPTION){
 				int[] selection = this.carsPanel.getTable().getSelectedRows();
 				for(int i = 0; i < selection.length; i++) {
@@ -86,7 +91,7 @@ public class CarController implements ActionListener{
 		} else if (e.getSource() == this.carsPanel.getUpdateButton()) {
 			int[] selection = this.carsPanel.getTable().getSelectedRows();
 			if (selection.length == 1) {
-				int dialogResult = JOptionPane.showConfirmDialog (null, "Would You Like to Delete selected elements?","Warning", JOptionPane.DEFAULT_OPTION);
+				int dialogResult = JOptionPane.showConfirmDialog (null, "Would You Like to Update selected elements?","Warning", JOptionPane.WARNING_MESSAGE);
 				if(dialogResult == JOptionPane.YES_OPTION){
 					this.carsPanel.getNumField().setEnabled(false);
 					this.carsPanel.getNumField().setText(this.carsPanel.getTable().getModel().getValueAt(selection[0], 0).toString());
@@ -96,7 +101,7 @@ public class CarController implements ActionListener{
 					this.carsPanel.getAddButton().setText("Modify");
 				}
 			} else {
-				int dialogResult = JOptionPane.showConfirmDialog (null, "You have to choose just one row!","Warning", JOptionPane.DEFAULT_OPTION);
+				JOptionPane.showMessageDialog (null, "You have to choose just one row!","Error", JOptionPane.ERROR_MESSAGE);
 			}
 		}
 	}

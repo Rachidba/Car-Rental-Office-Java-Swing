@@ -33,7 +33,7 @@ public class CarsPanel extends JPanel {
         Font ff = new Font("Tahoma", Font.PLAIN, 20);
         Color cc = new Color(66, 134, 244);
 
-        Color cccc = new Color(247, 211, 192);
+        Color cccc = Color.white;
 
         this.numLabel = new JLabel("R.NUMBER: ");
         this.numLabel.setFont(f);
@@ -81,6 +81,18 @@ public class CarsPanel extends JPanel {
         this.updateButton.setFont(f);
         this.updateButton.setForeground(cc);
         this.updateButton.setBackground(cccc);
+
+        //button icons
+        ImageIcon addI = new ImageIcon("png/add.PNG");
+        this.addButton.setIcon(addI);
+        ImageIcon deleteI = new ImageIcon("png/delete.PNG");
+        this.deleteButton.setIcon(deleteI);
+        ImageIcon resetI = new ImageIcon("png/reset.PNG");
+        this.resetButton.setIcon(resetI);
+        ImageIcon updateI = new ImageIcon("png/update.PNG");
+        this.updateButton.setIcon(updateI);
+        ImageIcon exportI = new ImageIcon("png/export.PNG");
+        this.exportButton.setIcon(exportI);
 
         JPanel topPanel = new JPanel(new FlowLayout());
         JPanel bottomPanel = new JPanel(new FlowLayout());

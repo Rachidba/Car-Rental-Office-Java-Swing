@@ -1,6 +1,7 @@
 import Controller.AddRantingController;
 import Controller.CarController;
 import Controller.ClientController;
+import Controller.RentingController;
 import Model.*;
 
 import java.sql.*;
@@ -23,7 +24,8 @@ public class MainClass {
 
         ClientController clientController = new ClientController(clientsPanel);
         CarController carController = new CarController(carsPanel);
-        AddRantingController addRantingPanel1 = new AddRantingController(addRantingPanel);
+        RentingController rentingController = new RentingController(rentalsPanel,addRantingPanel );
+        AddRantingController addRantingPane1 = new AddRantingController(addRantingPanel);
 
         ui.setVisible(true);
     }

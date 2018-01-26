@@ -2,31 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65c08de4-883f-4492-ac26-d4bccec582b2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/CriteriaInter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Model/CriteriaInter.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Controller/AddRantingController.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Controller/AddRantingController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Controller/ClientController.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Controller/ClientController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/MainClass.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/MainClass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/RegistrationNumberCriterion.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/RegistrationNumberCriterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/AddRantingPanel.class" afterPath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/AddRantingPanel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/AddRantingController.java" afterPath="$PROJECT_DIR$/src/Controller/AddRantingController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/CarController.java" afterPath="$PROJECT_DIR$/src/Controller/CarController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/ClientController.java" afterPath="$PROJECT_DIR$/src/Controller/ClientController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/RentingController.java" afterPath="$PROJECT_DIR$/src/Controller/RentingController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainClass.java" afterPath="$PROJECT_DIR$/src/MainClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/BrandCriterion.java" afterPath="$PROJECT_DIR$/src/Model/BrandCriterion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/CarDAO.java" afterPath="$PROJECT_DIR$/src/Model/CarDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/CarTableModel.java" afterPath="$PROJECT_DIR$/src/Model/CarTableModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/ClientDAO.java" afterPath="$PROJECT_DIR$/src/Model/ClientDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/ClientTableModel.java" afterPath="$PROJECT_DIR$/src/Model/ClientTableModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Criterion.java" afterPath="$PROJECT_DIR$/src/Model/Criterion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/ModeleCriterion.java" afterPath="$PROJECT_DIR$/src/Model/ModeleCriterion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/PriceCriterion.java" afterPath="$PROJECT_DIR$/src/Model/PriceCriterion.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/RantalsTableModel.java" afterPath="$PROJECT_DIR$/src/Model/RantalsTableModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/RegistrationNumberCriterion.java" afterPath="$PROJECT_DIR$/src/Model/RegistrationNumberCriterion.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/AddRantingPanel.java" afterPath="$PROJECT_DIR$/src/View/AddRantingPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/CarsPanel.java" afterPath="$PROJECT_DIR$/src/View/CarsPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/ClientsPanel.java" afterPath="$PROJECT_DIR$/src/View/ClientsPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/HomePanel.java" afterPath="$PROJECT_DIR$/src/View/HomePanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/RentalsPanel.java" afterPath="$PROJECT_DIR$/src/View/RentalsPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/UI.java" afterPath="$PROJECT_DIR$/src/View/UI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,27 +29,29 @@
       <file leaf-file-name="RentalsPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/RentalsPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="73" column="30" lean-forward="true" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
-              <folding>
-                <element signature="e#2220#2221#0" expanded="true" />
-                <element signature="e#2257#2258#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1054">
+              <caret line="73" column="30" lean-forward="false" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddRantingController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddRantingController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/AddRantingController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="151">
               <caret line="121" column="11" lean-forward="false" selection-start-line="121" selection-start-column="11" selection-end-line="121" selection-end-column="11" />
-              <folding>
-                <element signature="e#1188#1642#0" expanded="true" />
-                <element signature="e#1641#1642#0" expanded="true" />
-                <element signature="e#1778#2228#0" expanded="true" />
-                <element signature="e#2227#2228#0" expanded="true" />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SingletonConnection.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Model/SingletonConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,7 +59,7 @@
       <file leaf-file-name="RantingDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/RantingDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1955">
+            <state relative-caret-position="2176">
               <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
               <folding />
             </state>
@@ -79,7 +69,7 @@
       <file leaf-file-name="ClientTableModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/ClientTableModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
+            <state relative-caret-position="408">
               <caret line="27" column="55" lean-forward="false" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
               <folding>
                 <element signature="e#770#771#0" expanded="true" />
@@ -92,14 +82,9 @@
       <file leaf-file-name="AddRantingPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/AddRantingPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1088">
+            <state relative-caret-position="85">
               <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-              <folding>
-                <element signature="e#11992#11993#0" expanded="true" />
-                <element signature="e#12038#12039#0" expanded="true" />
-                <element signature="e#12093#12094#0" expanded="true" />
-                <element signature="e#12133#12134#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,8 +92,8 @@
       <file leaf-file-name="Ranting.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/Ranting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+            <state relative-caret-position="476">
+              <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -117,25 +102,10 @@
       <file leaf-file-name="CarDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/CarDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1459">
-              <caret line="135" column="77" lean-forward="true" selection-start-line="135" selection-start-column="77" selection-end-line="135" selection-end-column="77" />
+            <state relative-caret-position="2176">
+              <caret line="135" column="77" lean-forward="false" selection-start-line="135" selection-start-column="77" selection-end-line="135" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientsPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/ClientsPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="149" column="8" lean-forward="true" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
-              <folding>
-                <element signature="e#615#616#0" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
-                <element signature="e#4369#4370#0" expanded="true" />
-                <element signature="e#4403#4404#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,8 +114,8 @@
       <file leaf-file-name="CarTableModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/CarTableModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+            <state relative-caret-position="323">
+              <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
               <folding>
                 <element signature="e#299#300#0" expanded="true" />
                 <element signature="e#325#326#0" expanded="true" />
@@ -159,15 +129,9 @@
       <file leaf-file-name="RantalsTableModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/RantalsTableModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="26" column="56" lean-forward="false" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
-              <folding>
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#804#805#0" expanded="true" />
-                <element signature="e#867#868#0" expanded="true" />
-                <marker date="1516856314739" expanded="true" signature="473:775" ph="{...}" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -214,7 +178,6 @@
         <option value="$PROJECT_DIR$/src/View/UI.java" />
         <option value="$PROJECT_DIR$/src/Model/RantingDAO.java" />
         <option value="$PROJECT_DIR$/src/ExcelExporter.java" />
-        <option value="$PROJECT_DIR$/src/Model/SingletonConnection.java" />
         <option value="$PROJECT_DIR$/src/Controller/ExcelExporter.java" />
         <option value="$PROJECT_DIR$/src/Controller/RentingController.java" />
         <option value="$PROJECT_DIR$/src/Model/Criterion.java" />
@@ -242,6 +205,7 @@
         <option value="$PROJECT_DIR$/src/View/AddRantingPanel.java" />
         <option value="$PROJECT_DIR$/src/View/RentalsPanel.java" />
         <option value="$PROJECT_DIR$/src/Controller/AddRantingController.java" />
+        <option value="$PROJECT_DIR$/src/Model/SingletonConnection.java" />
       </list>
     </option>
   </component>
@@ -267,48 +231,36 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="CarRentalOfficeApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarRentalOfficeApp" type="462c0819:PsiDirectoryNode" />
+              <item name="CarRentalOfficeApp2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarRentalOfficeApp2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CarRentalOfficeApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarRentalOfficeApp" type="462c0819:PsiDirectoryNode" />
+              <item name="CarRentalOfficeApp2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarRentalOfficeApp2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CarRentalOfficeApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarRentalOfficeApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarRentalOfficeApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarRentalOfficeApp" type="462c0819:PsiDirectoryNode" />
+              <item name="CarRentalOfficeApp2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarRentalOfficeApp2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarRentalOfficeApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarRentalOfficeApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/poi-3.17.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -442,6 +394,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -451,7 +404,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -521,13 +474,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/CarCriteriaInter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/CarCriteriaInter.java" />
     <entry file="file://$PROJECT_DIR$/src/Model/ClientDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -546,7 +493,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -613,19 +563,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/DefaultTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/DefaultTableModel.java" />
     <entry file="file://$PROJECT_DIR$/src/View/HomePanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -633,7 +575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -641,9 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="43" column="65" lean-forward="false" selection-start-line="43" selection-start-column="65" selection-end-line="43" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -651,7 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -661,35 +598,12 @@
           <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1516850980802" expanded="true" signature="663:941" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/SelectionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/CarCriteriaInter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/SingletonConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SelectionListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/Model/CarCriteriaInter.java" />
     <entry file="file://$PROJECT_DIR$/src/Model/ClientCriterionInter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -706,22 +620,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/ClientCriterialInter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/ClientCriterialInter.java" />
     <entry file="file://$PROJECT_DIR$/src/Controller/ClientController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="107" column="146" lean-forward="true" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="146" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1516850408892" expanded="true" signature="4948:4951" ph="{}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -729,7 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -737,9 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -831,10 +730,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="131" column="121" lean-forward="false" selection-start-line="131" selection-start-column="114" selection-end-line="131" selection-end-column="121" />
-          <folding>
-            <marker date="1516855312323" expanded="true" signature="2359:2362" ph=" { " />
-            <marker date="1516855312323" expanded="true" signature="4121:4637" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -842,31 +738,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
           <caret line="174" column="47" lean-forward="false" selection-start-line="174" selection-start-column="47" selection-end-line="174" selection-end-column="47" />
-          <folding>
-            <element signature="e#4692#4693#0" expanded="true" />
-            <element signature="e#4720#4721#0" expanded="true" />
-            <element signature="e#4803#4804#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/ClientsPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="149" column="8" lean-forward="true" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
+        <state relative-caret-position="2193">
+          <caret line="149" column="5" lean-forward="false" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
           <folding>
             <element signature="e#615#616#0" expanded="true" />
             <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#4369#4370#0" expanded="true" />
-            <element signature="e#4403#4404#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/CarDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1459">
-          <caret line="135" column="77" lean-forward="true" selection-start-line="135" selection-start-column="77" selection-end-line="135" selection-end-column="77" />
+        <state relative-caret-position="2176">
+          <caret line="135" column="77" lean-forward="false" selection-start-line="135" selection-start-column="77" selection-end-line="135" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -875,8 +764,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/CarTableModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+        <state relative-caret-position="323">
+          <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
           <folding>
             <element signature="e#299#300#0" expanded="true" />
             <element signature="e#325#326#0" expanded="true" />
@@ -888,29 +777,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/RantalsTableModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="56" lean-forward="false" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
-          <folding>
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <marker date="1516856314739" expanded="true" signature="473:775" ph="{...}" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Ranting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        <state relative-caret-position="476">
+          <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/RantingDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1955">
+        <state relative-caret-position="2176">
           <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
           <folding />
         </state>
@@ -918,7 +801,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/ClientTableModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
+        <state relative-caret-position="408">
           <caret line="27" column="55" lean-forward="false" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
           <folding>
             <element signature="e#770#771#0" expanded="true" />
@@ -929,25 +812,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/AddRantingPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1088">
+        <state relative-caret-position="85">
           <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <element signature="e#11992#11993#0" expanded="true" />
-            <element signature="e#12038#12039#0" expanded="true" />
-            <element signature="e#12093#12094#0" expanded="true" />
-            <element signature="e#12133#12134#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/RentalsPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="73" column="30" lean-forward="true" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
-          <folding>
-            <element signature="e#2220#2221#0" expanded="true" />
-            <element signature="e#2257#2258#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1054">
+          <caret line="73" column="30" lean-forward="false" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -955,12 +830,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="121" column="11" lean-forward="false" selection-start-line="121" selection-start-column="11" selection-end-line="121" selection-end-column="11" />
-          <folding>
-            <element signature="e#1188#1642#0" expanded="true" />
-            <element signature="e#1641#1642#0" expanded="true" />
-            <element signature="e#1778#2228#0" expanded="true" />
-            <element signature="e#2227#2228#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/SingletonConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
