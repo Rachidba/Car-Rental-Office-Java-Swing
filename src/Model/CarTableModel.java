@@ -21,6 +21,10 @@ public class CarTableModel extends AbstractTableModel{
         fireTableChanged(null);
     }
 
+    public void availables() {
+        this.loadData(DAOFactory.getCarDAO().available());
+    }
+
     public void initData() {
         this.loadData(DAOFactory.getCarDAO().all());
     }

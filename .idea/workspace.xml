@@ -2,19 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65c08de4-883f-4492-ac26-d4bccec582b2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Cars.xls" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Controller/AddRantingController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Controller/AddRantingController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Controller/AddRantingController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Controller/CarController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Controller/ClientController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Controller/ExcelExporter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Controller/RentingController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/MainClass.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/BrandCriterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/CINCriterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/Car.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/CarCriterionInter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/CarDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/CarTableModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/Client.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/ClientCriterionInter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/ClientDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/ClientTableModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/Criterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/DAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/DAOFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/FnameCriterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/LnameCriterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/ModeleCriterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/PriceCriterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/RantalsTableModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/Ranting.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/RantingDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/RegistrationNumberCriterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/Model/SingletonConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/AddRantingPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/CarsPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/ClientsPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/HomePanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/RentalsPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CarRentalOfficeApp/View/UI.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/AddRantingController.java" afterPath="$PROJECT_DIR$/src/Controller/AddRantingController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/CarController.java" afterPath="$PROJECT_DIR$/src/Controller/CarController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/ClientController.java" afterPath="$PROJECT_DIR$/src/Controller/ClientController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/RentingController.java" afterPath="$PROJECT_DIR$/src/Controller/RentingController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainClass.java" afterPath="$PROJECT_DIR$/src/MainClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/RantalsTableModel.java" afterPath="$PROJECT_DIR$/src/Model/RantalsTableModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/CarDAO.java" afterPath="$PROJECT_DIR$/src/Model/CarDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/CarTableModel.java" afterPath="$PROJECT_DIR$/src/Model/CarTableModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Client.java" afterPath="$PROJECT_DIR$/src/Model/Client.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/ClientDAO.java" afterPath="$PROJECT_DIR$/src/Model/ClientDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/ClientTableModel.java" afterPath="$PROJECT_DIR$/src/Model/ClientTableModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/DAO.java" afterPath="$PROJECT_DIR$/src/Model/DAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/PriceCriterion.java" afterPath="$PROJECT_DIR$/src/Model/PriceCriterion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Ranting.java" afterPath="$PROJECT_DIR$/src/Model/Ranting.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/RantingDAO.java" afterPath="$PROJECT_DIR$/src/Model/RantingDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/SingletonConnection.java" afterPath="$PROJECT_DIR$/src/Model/SingletonConnection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/AddRantingPanel.java" afterPath="$PROJECT_DIR$/src/View/AddRantingPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/CarsPanel.java" afterPath="$PROJECT_DIR$/src/View/CarsPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/ClientsPanel.java" afterPath="$PROJECT_DIR$/src/View/ClientsPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/HomePanel.java" afterPath="$PROJECT_DIR$/src/View/HomePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/RentalsPanel.java" afterPath="$PROJECT_DIR$/src/View/RentalsPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/UI.java" afterPath="$PROJECT_DIR$/src/View/UI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,74 +64,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RentalsPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/RentalsPanel.java">
+      <file leaf-file-name="ClientDAO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Model/ClientDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="73" column="30" lean-forward="false" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddRantingController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/AddRantingController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="121" column="11" lean-forward="false" selection-start-line="121" selection-start-column="11" selection-end-line="121" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SingletonConnection.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Model/SingletonConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RantingDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/RantingDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2176">
-              <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientTableModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/ClientTableModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" column="55" lean-forward="false" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
-              <folding>
-                <element signature="e#770#771#0" expanded="true" />
-                <element signature="e#832#833#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddRantingPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/AddRantingPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ranting.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Ranting.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+            <state relative-caret-position="1683">
+              <caret line="124" column="32" lean-forward="false" selection-start-line="124" selection-start-column="32" selection-end-line="124" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -102,36 +77,11 @@
       <file leaf-file-name="CarDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/CarDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2176">
-              <caret line="135" column="77" lean-forward="false" selection-start-line="135" selection-start-column="77" selection-end-line="135" selection-end-column="77" />
+            <state relative-caret-position="2057">
+              <caret line="128" column="27" lean-forward="false" selection-start-line="128" selection-start-column="27" selection-end-line="130" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CarTableModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/CarTableModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-              <folding>
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#681#682#0" expanded="true" />
-                <element signature="e#740#741#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RantalsTableModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/RantalsTableModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -169,17 +119,12 @@
         <option value="$PROJECT_DIR$/src/View/ClientsPannel.java" />
         <option value="$PROJECT_DIR$/src/Controller/UI.java" />
         <option value="$PROJECT_DIR$/src/Model/Car.java" />
-        <option value="$PROJECT_DIR$/src/Model/Client.java" />
         <option value="$PROJECT_DIR$/src/View/AddRantalPanel.java" />
-        <option value="$PROJECT_DIR$/src/Model/Ranting.java" />
         <option value="$PROJECT_DIR$/src/Model/DAOFactory.java" />
         <option value="$PROJECT_DIR$/src/Model/DefaultTableModel.java" />
-        <option value="$PROJECT_DIR$/src/Model/DAO.java" />
         <option value="$PROJECT_DIR$/src/View/UI.java" />
-        <option value="$PROJECT_DIR$/src/Model/RantingDAO.java" />
         <option value="$PROJECT_DIR$/src/ExcelExporter.java" />
         <option value="$PROJECT_DIR$/src/Controller/ExcelExporter.java" />
-        <option value="$PROJECT_DIR$/src/Controller/RentingController.java" />
         <option value="$PROJECT_DIR$/src/Model/Criterion.java" />
         <option value="$PROJECT_DIR$/src/Controller/CarController.java" />
         <option value="$PROJECT_DIR$/src/Model/CriteriaInter.java" />
@@ -188,24 +133,29 @@
         <option value="$PROJECT_DIR$/src/Controller/ClientController.java" />
         <option value="$PROJECT_DIR$/src/MainClass.java" />
         <option value="$PROJECT_DIR$/src/Controller/SelectionListener.java" />
-        <option value="$PROJECT_DIR$/src/Model/PriceCriterion.java" />
         <option value="$PROJECT_DIR$/src/Model/LnameCriterion.java" />
         <option value="$PROJECT_DIR$/src/Model/FnameCriterion.java" />
         <option value="$PROJECT_DIR$/src/Model/CINCriterion.java" />
         <option value="$PROJECT_DIR$/src/Model/ModeleCriterion.java" />
         <option value="$PROJECT_DIR$/src/Model/BrandCriterion.java" />
         <option value="$PROJECT_DIR$/src/Model/RegistrationNumberCriterion.java" />
-        <option value="$PROJECT_DIR$/src/Model/ClientDAO.java" />
         <option value="$PROJECT_DIR$/src/View/CarsPanel.java" />
         <option value="$PROJECT_DIR$/src/View/ClientsPanel.java" />
-        <option value="$PROJECT_DIR$/src/Model/CarDAO.java" />
-        <option value="$PROJECT_DIR$/src/Model/ClientTableModel.java" />
-        <option value="$PROJECT_DIR$/src/Model/CarTableModel.java" />
         <option value="$PROJECT_DIR$/src/Model/RantalsTableModel.java" />
-        <option value="$PROJECT_DIR$/src/View/AddRantingPanel.java" />
         <option value="$PROJECT_DIR$/src/View/RentalsPanel.java" />
-        <option value="$PROJECT_DIR$/src/Controller/AddRantingController.java" />
+        <option value="$PROJECT_DIR$/src/Controller/RentingController.java" />
+        <option value="$PROJECT_DIR$/src/Model/CarTableModel.java" />
         <option value="$PROJECT_DIR$/src/Model/SingletonConnection.java" />
+        <option value="$PROJECT_DIR$/src/Model/DAO.java" />
+        <option value="$PROJECT_DIR$/src/Model/RantingDAO.java" />
+        <option value="$PROJECT_DIR$/src/Model/Client.java" />
+        <option value="$PROJECT_DIR$/src/Model/Ranting.java" />
+        <option value="$PROJECT_DIR$/src/Model/PriceCriterion.java" />
+        <option value="$PROJECT_DIR$/src/View/AddRantingPanel.java" />
+        <option value="$PROJECT_DIR$/src/Controller/AddRantingController.java" />
+        <option value="$PROJECT_DIR$/src/Model/ClientTableModel.java" />
+        <option value="$PROJECT_DIR$/src/Model/CarDAO.java" />
+        <option value="$PROJECT_DIR$/src/Model/ClientDAO.java" />
       </list>
     </option>
   </component>
@@ -231,36 +181,48 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="CarRentalOfficeApp2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarRentalOfficeApp2" type="462c0819:PsiDirectoryNode" />
+              <item name="CarRentalOfficeApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarRentalOfficeApp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CarRentalOfficeApp2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarRentalOfficeApp2" type="462c0819:PsiDirectoryNode" />
+              <item name="CarRentalOfficeApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarRentalOfficeApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CarRentalOfficeApp2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarRentalOfficeApp2" type="462c0819:PsiDirectoryNode" />
+              <item name="CarRentalOfficeApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarRentalOfficeApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarRentalOfficeApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarRentalOfficeApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarRentalOfficeApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarRentalOfficeApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CarRentalOfficeApp - Copy (3)" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -404,12 +366,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21013413" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20131771" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23206443" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -443,10 +405,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21013413" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20131771" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23206443" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -494,8 +456,8 @@
         <state relative-caret-position="255">
           <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="false" />
+            <element signature="e#262#263#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -537,28 +499,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/AddClientPanel.java" />
     <entry file="file://$PROJECT_DIR$/src/View/ClientsListPanel.java" />
-    <entry file="file://$PROJECT_DIR$/src/Model/DAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/DAOFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -578,27 +522,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/CarController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="43" column="65" lean-forward="false" selection-start-line="43" selection-start-column="65" selection-end-line="43" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/UI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -628,17 +555,239 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/RentingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/ExcelExporter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/CINCriterion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="e#289#290#0" expanded="false" />
+            <element signature="e#315#316#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <element signature="e#243#244#0" expanded="false" />
+            <element signature="e#262#263#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/ModeleCriterion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="e#426#427#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/BrandCriterion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding>
+            <element signature="e#425#426#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/RegistrationNumberCriterion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="e#416#417#0" expanded="false" />
+            <element signature="e#457#458#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/ClientsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="160" column="8" lean-forward="false" selection-start-line="160" selection-start-column="8" selection-end-line="160" selection-end-column="8" />
+          <folding>
+            <element signature="e#615#616#0" expanded="false" />
+            <element signature="e#643#644#0" expanded="false" />
+            <element signature="e#4888#4889#0" expanded="false" />
+            <element signature="e#4922#4923#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/RentalsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="94" column="30" lean-forward="false" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
+          <folding>
+            <element signature="e#2768#2769#0" expanded="true" />
+            <element signature="e#2805#2806#0" expanded="true" />
+            <marker date="1516896934000" expanded="true" signature="1895:2557" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/RentingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="98" column="71" lean-forward="false" selection-start-line="98" selection-start-column="71" selection-end-line="98" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/CarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="91" column="21" lean-forward="false" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/CarsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/SingletonConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/RantingDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="e#3732#3733#0" expanded="true" />
+            <element signature="e#3750#3751#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Ranting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/CarTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/ClientTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+          <folding>
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/PriceCriterion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/RantalsTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-62">
+          <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+          <folding>
+            <element signature="e#1131#1132#0" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
+            <marker date="1516899446000" expanded="true" signature="964:1102" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AddRantingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="116" column="106" lean-forward="false" selection-start-line="116" selection-start-column="106" selection-end-line="116" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/FnameCriterion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/AddRantingPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="56" column="33" lean-forward="false" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -652,192 +801,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/FnameCriterion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding>
-            <element signature="e#407#408#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/CINCriterion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-          <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/PriceCriterion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/ModeleCriterion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <element signature="e#426#427#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/BrandCriterion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding>
-            <element signature="e#425#426#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/RegistrationNumberCriterion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/ClientDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="131" column="121" lean-forward="false" selection-start-line="131" selection-start-column="114" selection-end-line="131" selection-end-column="121" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/CarsPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="174" column="47" lean-forward="false" selection-start-line="174" selection-start-column="47" selection-end-line="174" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/ClientsPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2193">
-          <caret line="149" column="5" lean-forward="false" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
-          <folding>
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/CarDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2176">
-          <caret line="135" column="77" lean-forward="false" selection-start-line="135" selection-start-column="77" selection-end-line="135" selection-end-column="77" />
+        <state relative-caret-position="2057">
+          <caret line="128" column="27" lean-forward="false" selection-start-line="128" selection-start-column="27" selection-end-line="130" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/CarTableModel.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/ClientDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-          <folding>
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/RantalsTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Ranting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/RantingDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2176">
-          <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/ClientTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="55" lean-forward="false" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
-          <folding>
-            <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/AddRantingPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/RentalsPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="73" column="30" lean-forward="false" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AddRantingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="121" column="11" lean-forward="false" selection-start-line="121" selection-start-column="11" selection-end-line="121" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/SingletonConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        <state relative-caret-position="1683">
+          <caret line="124" column="32" lean-forward="false" selection-start-line="124" selection-start-column="32" selection-end-line="124" selection-end-column="32" />
           <folding />
         </state>
       </provider>

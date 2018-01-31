@@ -14,7 +14,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Observable;
 
-public class AddRantingController extends Observable implements ActionListener {
+public class AddRantingController implements ActionListener {
     AddRantingPanel rantingPanel;
     private DAO<Ranting> rantingDAO;
     public AddRantingController(final AddRantingPanel rantingPanel){
@@ -113,13 +113,10 @@ public class AddRantingController extends Observable implements ActionListener {
                        java.sql.Date.valueOf(this.rantingPanel.getRentalDateField().getText()),
                        java.sql.Date.valueOf(this.rantingPanel.getReturnDateField().getText())
                ));
+               this.rantingPanel.getClientModel().removeRow(this.rantingPanel.getClientsTable().getSelectedRow());
+               this.rantingPanel.getCarModel().removeRow(this.rantingPanel.getCarsTable().getSelectedRow());
                JOptionPane.showMessageDialog (null, "This renting has been added !","Information", JOptionPane.INFORMATION_MESSAGE);
-               this.rantingPanel.getSelectedClient().setText("");
-               this.rantingPanel.getSelectedCar().setText("");
-               this.rantingPanel.getRentalDateField().setText("");
-               this.rantingPanel.getReturnDateField().setText("");
-               this.setChanged();
-               this.notifyObservers();
+
            }else {
                JOptionPane.showMessageDialog (null, "There is an empty field!","Error", JOptionPane.ERROR_MESSAGE);
            }

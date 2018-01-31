@@ -5,11 +5,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-/**
- * @author R2S
- * @version 1.0
- * @created 20-Jan-2018 5:40:37 PM
- */
 public class SingletonConnection {
 	//Database connection URL
 	private final String url = "jdbc:mysql://localhost:3306/carrentaloffice?useSSL=false";

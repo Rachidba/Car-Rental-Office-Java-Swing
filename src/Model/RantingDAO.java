@@ -8,11 +8,6 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Vector;
 
-/**
- * @author R2S
- * @version 1.0
- * @created 20-Jan-2018 5:40:35 PM
- */
 public class RantingDAO extends DAO<Ranting> {
 
 	public RantingDAO(Connection connection){
@@ -132,6 +127,11 @@ public class RantingDAO extends DAO<Ranting> {
 			e.printStackTrace();
 		}
 		return rantings;
+	}
+
+	@Override
+	public List<Ranting> available() {
+		return null;
 	}
 
 	public List<Ranting> all(String ref) {

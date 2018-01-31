@@ -9,11 +9,6 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Vector;
 
-/**
- * @author R2S
- * @version 1.0
- * @created 20-Jan-2018 5:40:33 PM
- */
 public class ClientDAO extends DAO<Client> {
 
 	public ClientDAO(Connection connection){
@@ -103,6 +98,31 @@ public class ClientDAO extends DAO<Client> {
 		Vector<Client> clients = new Vector<>();
 		try {
 			String query = "SELECT * FROM client";
+			PreparedStatement state = this.connection.prepareStatement(query,
+					ResultSet.TYPE_FORWARD_ONLY,
+					ResultSet.CONCUR_READ_ONLY);
+			ResultSet result = state.executeQuery();
+
+			while(result.next()){
+				clients.add(new Client(
+						result.getString("CIN"),
+						result.getString("firstName"),
+						result.getString("lastName"))
+				);
+			}
+			return clients;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return clients;
+	}
+
+	public List<Client> available() {
+		Vector<Client> clients = new Vector<>();
+		try {
+			String query = "SELECT * FROM client " +
+					"WHERE cin NOT IN " +
+					"(SELECT cin FROM ranting)";
 			PreparedStatement state = this.connection.prepareStatement(query,
 					ResultSet.TYPE_FORWARD_ONLY,
 					ResultSet.CONCUR_READ_ONLY);

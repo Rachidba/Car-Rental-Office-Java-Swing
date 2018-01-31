@@ -123,6 +123,32 @@ public class CarDAO extends DAO<Car> {
 		return cars;
 	}
 
+	public List<Car> available() {
+		Vector<Car> cars = new Vector<>();
+		try {
+			String query = "SELECT * FROM car " +
+					"WHERE registrationNumber NOT IN " +
+					"(SELECT registrationNumber FROM ranting)";
+			PreparedStatement state = this.connection.prepareStatement(query,
+					ResultSet.TYPE_FORWARD_ONLY,
+					ResultSet.CONCUR_READ_ONLY);
+			ResultSet result = state.executeQuery();
+
+			while(result.next()){
+				Car newC = new Car(
+						result.getString("registrationNumber"),
+						result.getString("model"),
+						result.getString("brand"),
+						result.getDouble("price"));
+				cars.add(newC);
+			}
+			return cars;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return cars;
+	}
+
 	public List<Car> search(CarCriterionInter criterion){
 		if(!criterion.getCriterions().isEmpty()){
 			String query = " SELECT * FROM car WHERE ";

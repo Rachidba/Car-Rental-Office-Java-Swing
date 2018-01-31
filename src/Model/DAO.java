@@ -4,11 +4,6 @@ package Model;
 import java.sql.Connection;
 import java.util.List;
 
-/**
- * @author R2S
- * @version 1.0
- * @created 20-Jan-2018 5:40:36 PM
- */
 public abstract class DAO<T> {
 	protected Connection connection = null;
 
@@ -29,6 +24,8 @@ public abstract class DAO<T> {
 	public abstract T find(String ref);
 
 	public abstract List<T> all();
+
+	public abstract List<T> available();
 
 	public void finalize() throws Throwable {
 

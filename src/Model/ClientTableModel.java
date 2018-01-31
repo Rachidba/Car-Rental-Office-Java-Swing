@@ -28,6 +28,10 @@ public class ClientTableModel extends AbstractTableModel {
         this.loadData(DAOFactory.getClientDAO().all());
     }
 
+    public void availables() {
+        this.loadData(DAOFactory.getClientDAO().available());
+    }
+
     public int getRowCount() {
         return this.data.size();
     }

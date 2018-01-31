@@ -95,12 +95,16 @@ public class RentingController implements ActionListener {
 		}else if(e.getSource() == this.addRantingPanel.getAddRantingButton()){
 			String[] str = {
 					"0",
-					this.addRantingPanel.getNumField().getText(),
-					this.addRantingPanel.getModelField().getText(),
+					this.addRantingPanel.getSelectedCar().getText(),
+					this.addRantingPanel.getSelectedClient().getText(),
 							"NO",
-					this.addRantingPanel.getBrandField().getText(),
-					this.addRantingPanel.getPriceField().getText(),
+					this.addRantingPanel.getRentalDateField().getText(),
+					this.addRantingPanel.getReturnDateField().getText()
 			};
+			this.addRantingPanel.getSelectedClient().setText("");
+			this.addRantingPanel.getSelectedCar().setText("");
+			this.addRantingPanel.getRentalDateField().setText("");
+			this.addRantingPanel.getReturnDateField().setText("");
 			this.rentalsPanel.getModel().addRow(str);
 		}
 	}

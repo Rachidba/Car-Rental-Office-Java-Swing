@@ -54,7 +54,9 @@ public class AddRantingPanel extends JPanel {
         this.setLayout(new BorderLayout());
         //get data from DB
         clientModel = new ClientTableModel();
+        clientModel.availables();
         carModel = new CarTableModel();
+        carModel.availables();
         this.clientsTable = new JTable(clientModel);
         this.carsTable = new JTable(carModel);
         //components
